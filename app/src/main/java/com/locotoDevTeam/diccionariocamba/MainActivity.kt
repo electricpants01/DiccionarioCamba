@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
         initBottomNavView()
+
     }
 
     private fun initBottomNavView(){
