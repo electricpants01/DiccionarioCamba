@@ -20,4 +20,9 @@
         android:name="com.locotoDevTeam.diccionariocamba.view.SlideFragment"
         android:label="fragment_slide"
         tools:layout="@layout/fragment_slide" />
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.locotoDevTeam.diccionariocamba.view.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" />
 </navigation>
