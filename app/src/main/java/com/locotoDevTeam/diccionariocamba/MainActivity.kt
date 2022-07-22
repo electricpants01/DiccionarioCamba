@@ -1,4 +1,4 @@
-package com.locotoDevTeam.diccionariocamba.view
+package com.locotoDevTeam.diccionariocamba
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
