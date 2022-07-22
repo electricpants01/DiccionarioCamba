@@ -17,8 +17,6 @@ class SlideFragment : Fragment() {
 
     lateinit var sliderBinding: FragmentSlideBinding
     val dataSource = DataSource().loadImages()
-    lateinit var recyclerView: RecyclerView
-    lateinit var koloda: Koloda
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,11 +29,11 @@ class SlideFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        initRecycler()
     }
 
     private fun initRecycler(){
-        val adapter = ItemKolodaAdapter(requireContext(), dataSource)
-        koloda.adapter = adapter
+        val adapter = ItemKolodaAdapter(requireContext(), dataSource.shuffled())
+        sliderBinding.koloda.adapter = adapter
     }
 }

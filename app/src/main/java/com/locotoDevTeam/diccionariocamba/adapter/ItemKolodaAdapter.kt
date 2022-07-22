@@ -11,15 +11,15 @@ import com.locotoDevTeam.diccionariocamba.databinding.ItemKolodaBinding
 import com.locotoDevTeam.diccionariocamba.model.ImageSC
 
 class ItemKolodaAdapter(private val context: Context, private val dataSource: List<ImageSC>)
-    : BaseAdapter(){
+    : BaseAdapter() {
 
-//    class ItemKolodaHolder(private val view: View): RecyclerView.ViewHolder(view) {
-//        val binding = ItemKolodaBinding.bind(view)
-//
-//        fun render(imageSC: ImageSC, word: String, definition: String) {
-//            binding.shapeableImageView.setImageResource(imageSC.imageResource)
-//        }
-//    }
+    class ItemKolodaHolder(private val view: View): RecyclerView.ViewHolder(view) {
+        val binding = ItemKolodaBinding.bind(view)
+
+        fun render(imageSC: ImageSC, word: String, definition: String) {
+            binding.shapeableImageView.setImageResource(imageSC.imageResource)
+        }
+    }
 
     override fun getCount(): Int = dataSource.size
 
@@ -33,6 +33,8 @@ class ItemKolodaAdapter(private val context: Context, private val dataSource: Li
 
     override fun getView(position: Int, view: View?, parent: ViewGroup?): View {
         val layoutInflater = LayoutInflater.from(parent!!.context).inflate(R.layout.item_koloda, parent, false)
+        val holder = ItemKolodaHolder(layoutInflater)
+        holder.render(dataSource[position], "","")
         return layoutInflater
     }
 }
