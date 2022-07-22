@@ -1,4 +1,4 @@
-package com.locotoDevTeam.diccionariocamba
+package com.locotoDevTeam.diccionariocamba.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,7 +11,6 @@ import com.locotoDevTeam.diccionariocamba.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     lateinit var mainBinding: ActivityMainBinding
-    lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
