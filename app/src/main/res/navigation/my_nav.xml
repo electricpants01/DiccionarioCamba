@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.locotoDevTeam.diccionariocamba.MainFragment"
+        android:name="com.locotoDevTeam.diccionariocamba.view.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" />
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.locotoDevTeam.diccionariocamba.AboutFragment"
+        android:name="com.locotoDevTeam.diccionariocamba.view.AboutFragment"
         android:label="fragment_about"
         tools:layout="@layout/fragment_about" />
     <fragment
         android:id="@+id/slideFragment"
-        android:name="com.locotoDevTeam.diccionariocamba.SlideFragment"
+        android:name="com.locotoDevTeam.diccionariocamba.view.SlideFragment"
         android:label="fragment_slide"
         tools:layout="@layout/fragment_slide" />
 </navigation>
