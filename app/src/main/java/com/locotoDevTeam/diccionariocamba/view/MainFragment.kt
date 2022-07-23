@@ -11,7 +11,7 @@ import com.locotoDevTeam.diccionariocamba.adapter.ItemDictionaryAdapter
 import com.locotoDevTeam.diccionariocamba.databinding.FragmentMainBinding
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
 
-class MainFragment : Fragment() {
+class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener {
 
     lateinit var binding: FragmentMainBinding
     val dataSource = listOf<Dictionary>(
@@ -42,9 +42,13 @@ class MainFragment : Fragment() {
     }
 
     private fun initRecyclerView() {
-        val adapter = ItemDictionaryAdapter(requireContext(), dataSource)
+        val adapter = ItemDictionaryAdapter(this, dataSource)
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
         binding.recyclerView.adapter = adapter
+    }
+
+    override fun onItemClick(item: Dictionary) {
+        print("chris ${item.word}")
     }
 
 }

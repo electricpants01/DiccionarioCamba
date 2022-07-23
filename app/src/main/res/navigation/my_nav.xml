@@ -25,4 +25,9 @@
         android:name="com.locotoDevTeam.diccionariocamba.view.FavoritesFragment"
         android:label="fragment_favorites"
         tools:layout="@layout/fragment_favorites" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.locotoDevTeam.diccionariocamba.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
 </navigation>
