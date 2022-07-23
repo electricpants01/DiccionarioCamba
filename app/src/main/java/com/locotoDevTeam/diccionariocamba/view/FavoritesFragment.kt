@@ -8,12 +8,12 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.locotoDevTeam.diccionariocamba.R
 import com.locotoDevTeam.diccionariocamba.adapter.ItemDictionaryAdapter
-import com.locotoDevTeam.diccionariocamba.databinding.FragmentMainBinding
+import com.locotoDevTeam.diccionariocamba.databinding.FragmentFavoritesBinding
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
 
-class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener {
+class FavoritesFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener {
 
-    lateinit var binding: FragmentMainBinding
+    lateinit var binding: FragmentFavoritesBinding
     val dataSource = listOf<Dictionary>(
         Dictionary(1,"acopaibau", "que sos tonto"),
         Dictionary(2, "chamare", "lugar muy muy lejano")
@@ -23,32 +23,27 @@ class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val view =  inflater.inflate(R.layout.fragment_main, container, false)
-        binding = FragmentMainBinding.bind(view)
+        val view = inflater.inflate(R.layout.fragment_favorites, container, false)
+        binding = FragmentFavoritesBinding.bind(view)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initRecyclerView()
-        initSearchView()
     }
 
-    private fun initSearchView(){
-        binding.searchView.setOnClickListener {
-            println("chris: hola")
-            binding.searchView.requestFocus()
-        }
-    }
-
-    private fun initRecyclerView() {
-        val adapter = ItemDictionaryAdapter(this, dataSource)
+    private fun initRecyclerView(){
+        val adpater = ItemDictionaryAdapter(this@FavoritesFragment, dataSource)
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
-        binding.recyclerView.adapter = adapter
+        binding.recyclerView.adapter = adpater
     }
 
     override fun onItemClick(item: Dictionary) {
-        print("chris ${item.word}")
+        println("chris: ${item.word}")
+        val dialog = DetailFragment()
+        dialog.dictionary = item
+        dialog.show(childFragmentManager, "detailFragment")
     }
 
 }

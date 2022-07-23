@@ -10,6 +10,10 @@
         android:title="Aprender"
         android:icon="@drawable/ic_baseline_lightbulb_24"/>
     <item
+        android:id="@+id/favoritesFragment"
+        android:title="Favoritos"
+        android:icon="@drawable/ic_baseline_star_24"/>
+    <item
         android:id="@+id/aboutFragment"
         android:title="Acerca"
         android:icon="@drawable/ic_baseline_person_24"/>
