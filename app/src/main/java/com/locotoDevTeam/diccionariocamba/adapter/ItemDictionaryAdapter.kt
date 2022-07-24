@@ -1,6 +1,5 @@
 package com.locotoDevTeam.diccionariocamba.adapter
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.locotoDevTeam.diccionariocamba.R
 import com.locotoDevTeam.diccionariocamba.databinding.DictionaryItemBinding
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
-import com.locotoDevTeam.diccionariocamba.view.MainFragment
 
 class ItemDictionaryAdapter(private val listener: OnItemClickListener, private val datasource: List<Dictionary>)
     : RecyclerView.Adapter<ItemDictionaryAdapter.DictionaryHolder>() {
