@@ -11,10 +11,10 @@ class SharedPrefs(context: Context) {
     }
 
     fun saveBoolean(key: String, value: Boolean) {
-        prefs.edit().putBoolean(key, false).apply()
+        prefs.edit().putBoolean(key, value).apply()
     }
 
-    fun getBoolean(key: String): Boolean? {
+    fun getBoolean(key: String): Boolean {
         return prefs.getBoolean(key, false)
     }
 

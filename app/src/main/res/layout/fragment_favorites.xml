@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/main_color"
     android:layout_height="match_parent"
-    tools:context=".view.FavoritesFragment">
+    tools:context=".view.favorites.FavoritesFragment">
 
     <TextView
         android:id="@+id/txtFavorites"
@@ -12,11 +13,23 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="24dp"
+        android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="26sp"
         android:text="@string/favorites"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/corner_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFavorites" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -28,5 +41,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtFavorites" />
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieFavorites"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/empty_star" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

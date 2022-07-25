@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.locotoDevTeam.diccionariocamba.R
 import com.locotoDevTeam.diccionariocamba.adapter.ItemDictionaryAdapter
@@ -14,7 +13,7 @@ import com.locotoDevTeam.diccionariocamba.databinding.FragmentMainBinding
 import com.locotoDevTeam.diccionariocamba.model.DataSource
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.util.SharedPrefs
-import com.locotoDevTeam.diccionariocamba.view.DetailFragment
+import com.locotoDevTeam.diccionariocamba.view.detail.DetailFragment
 
 class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener {
 
@@ -49,7 +48,7 @@ class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener {
         if(firstLoad == false) { // First load has not been done yet
             val dataSource = DataSource().loadDatabaseFirstTime()
             viewmodel.insertDictionary(dataSource, requireContext())
-//            prefs.saveBoolean(SharedPrefs.FIRST_LOAD, true)
+            prefs.saveBoolean(SharedPrefs.FIRST_LOAD, true)
         }
     }
 
@@ -58,6 +57,17 @@ class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener {
             binding.searchView.isIconified = false
             binding.searchView.onActionViewExpanded()
         }
+        
+        binding.searchView.setOnQueryTextListener(object : androidx.appcompat.widget.SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                viewmodel.searchInDictionary(newText!!, requireContext())
+                return false
+            }
+        })
     }
 
     private fun initRecyclerView() {

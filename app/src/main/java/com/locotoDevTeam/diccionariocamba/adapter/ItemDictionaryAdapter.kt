@@ -38,7 +38,6 @@ class ItemDictionaryAdapter(private val listener: OnItemClickListener, private v
         val item = datasource[position]
         holder.render(item)
         holder.binding.myCardView.setOnClickListener {
-            print("chris se presiono")
             listener.onItemClick(item)
         }
     }

@@ -11,4 +11,5 @@
     <color name="main_color_dark">#4dd16b</color>
     <color name="dictionary_item">#e7eaf0</color>
     <color name="right_arrow">#808080</color>
+    <color name="yellow_color">#ffb533</color>
 </resources>

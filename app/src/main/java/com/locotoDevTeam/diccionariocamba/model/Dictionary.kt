@@ -8,5 +8,6 @@ data class Dictionary(
     @PrimaryKey(autoGenerate = true)
     val id: Int,
     val word: String,
-    val definition: String) {
+    val definition: String,
+    var isFavorite: Boolean = false) {
 }
