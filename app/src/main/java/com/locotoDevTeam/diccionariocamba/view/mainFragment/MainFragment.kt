@@ -5,11 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.locotoDevTeam.diccionariocamba.R
 import com.locotoDevTeam.diccionariocamba.adapter.ItemDictionaryAdapter
 import com.locotoDevTeam.diccionariocamba.databinding.FragmentMainBinding
+import com.locotoDevTeam.diccionariocamba.model.DataSource
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.util.SharedPrefs
 import com.locotoDevTeam.diccionariocamba.view.DetailFragment
@@ -17,7 +19,9 @@ import com.locotoDevTeam.diccionariocamba.view.DetailFragment
 class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener {
 
     lateinit var binding: FragmentMainBinding
-//    val viewmodel = ViewModelProvider(this).get(MainFragmentViewModel::class.java)
+    private val viewmodel: MainFragmentViewModel by activityViewModels()
+    lateinit var adapter: ItemDictionaryAdapter
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,15 +35,22 @@ class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initRecyclerView()
-        initSearchView()
         initDataSource()
+        initSearchView()
+        initSubscriptions()
+        //
+        viewmodel.getAllDictionaries(requireContext())
     }
 
     private fun initDataSource() {
         // insert data first time
         val prefs = SharedPrefs(requireContext())
         val firstLoad = prefs.getBoolean(SharedPrefs.FIRST_LOAD)
-        println("chris fristload $firstLoad")
+        if(firstLoad == false) { // First load has not been done yet
+            val dataSource = DataSource().loadDatabaseFirstTime()
+            viewmodel.insertDictionary(dataSource, requireContext())
+//            prefs.saveBoolean(SharedPrefs.FIRST_LOAD, true)
+        }
     }
 
     private fun initSearchView(){
@@ -50,7 +61,7 @@ class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener {
     }
 
     private fun initRecyclerView() {
-        val adapter = ItemDictionaryAdapter(this, listOf())
+        adapter = ItemDictionaryAdapter(this, listOf())
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
         binding.recyclerView.adapter = adapter
     }
@@ -63,6 +74,10 @@ class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener {
 
     private fun initSubscriptions(){
 
+        viewmodel.dictionaryList.observe(viewLifecycleOwner) {
+            adapter.updateList(it)
+            adapter.notifyDataSetChanged()
+        }
     }
 
 }

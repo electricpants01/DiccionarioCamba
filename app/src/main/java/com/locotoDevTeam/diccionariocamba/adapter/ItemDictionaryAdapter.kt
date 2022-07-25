@@ -8,11 +8,17 @@ import com.locotoDevTeam.diccionariocamba.R
 import com.locotoDevTeam.diccionariocamba.databinding.DictionaryItemBinding
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
 
-class ItemDictionaryAdapter(private val listener: OnItemClickListener, private val datasource: List<Dictionary>)
+class ItemDictionaryAdapter(private val listener: OnItemClickListener, private var datasource: List<Dictionary>)
     : RecyclerView.Adapter<ItemDictionaryAdapter.DictionaryHolder>() {
 
     interface OnItemClickListener {
         fun onItemClick(item: Dictionary)
+    }
+
+    fun updateList(myDatasource: List<Dictionary>) {
+        this.datasource = listOf()
+        this.datasource = myDatasource
+        notifyDataSetChanged()
     }
 
     class DictionaryHolder(val view: View): RecyclerView.ViewHolder(view){
