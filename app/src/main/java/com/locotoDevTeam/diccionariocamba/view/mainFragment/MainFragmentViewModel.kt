@@ -21,6 +21,7 @@ class MainFragmentViewModel: ViewModel() {
             for (dictionary in dictionaryList) {
                 room.dictionaryDao().insert(dictionary)
             }
+            getAllDictionaries(context)
         }
     }
 

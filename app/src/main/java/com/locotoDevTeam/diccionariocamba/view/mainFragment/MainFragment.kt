@@ -45,7 +45,9 @@ class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener {
         // insert data first time
         val prefs = SharedPrefs(requireContext())
         val firstLoad = prefs.getBoolean(SharedPrefs.FIRST_LOAD)
+        println("first load es ${firstLoad}")
         if(!firstLoad) { // First load has not been done yet
+            println("chris entro")
             val dataSource = DataSource().loadDatabaseFirstTime()
             viewmodel.insertDictionary(dataSource, requireContext())
             prefs.saveBoolean(SharedPrefs.FIRST_LOAD, true)
