@@ -1,6 +1,5 @@
 package com.locotoDevTeam.diccionariocamba.adapter
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,13 +7,18 @@ import androidx.recyclerview.widget.RecyclerView
 import com.locotoDevTeam.diccionariocamba.R
 import com.locotoDevTeam.diccionariocamba.databinding.DictionaryItemBinding
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
-import com.locotoDevTeam.diccionariocamba.view.MainFragment
 
-class ItemDictionaryAdapter(private val listener: OnItemClickListener, private val datasource: List<Dictionary>)
+class ItemDictionaryAdapter(private val listener: OnItemClickListener, private var datasource: List<Dictionary>)
     : RecyclerView.Adapter<ItemDictionaryAdapter.DictionaryHolder>() {
 
     interface OnItemClickListener {
         fun onItemClick(item: Dictionary)
+    }
+
+    fun updateList(myDatasource: List<Dictionary>) {
+        this.datasource = listOf()
+        this.datasource = myDatasource
+        notifyDataSetChanged()
     }
 
     class DictionaryHolder(val view: View): RecyclerView.ViewHolder(view){
@@ -34,7 +38,6 @@ class ItemDictionaryAdapter(private val listener: OnItemClickListener, private v
         val item = datasource[position]
         holder.render(item)
         holder.binding.myCardView.setOnClickListener {
-            print("chris se presiono")
             listener.onItemClick(item)
         }
     }
