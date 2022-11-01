@@ -1,4 +1,4 @@
-package com.locotoDevTeam.diccionariocamba.view
+package com.locotoDevTeam.diccionariocamba.view.about
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

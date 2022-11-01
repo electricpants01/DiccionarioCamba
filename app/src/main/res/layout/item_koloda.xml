@@ -29,16 +29,36 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/image1" />
+                android:src="@drawable/image1"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="-107dp" />
 
             <TextView
                 android:id="@+id/txtDefinition"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Este es un menssaje bonito"
-                android:textColor="@color/white"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:textColor="@color/lightGreen"
                 android:textSize="26sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Definition wefwerge rergerl hgelrkg jerlkgrejk lgerjglerklgjerglkerjglgkljregkj" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:textSize="26sp"
+                android:textAlignment="center"
+                android:textColor="@color/lightGreen"
+                android:textStyle="bold"
+                tools:text="title"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
