@@ -303,7 +303,7 @@ class DataSource {
     Dictionary(204, "Minga", "Trabajo campestre que se hace por comida en un solo día."),
     Dictionary(205, "Mocheó", "Estado enfermizo de los niños, creyéndose su contagio por la exhalación del gas de los muertos."),
     Dictionary(206, "Mocherú", "Planta que tumba sus flores sin llegar a dar fruto."),
-    Dictionary(207, "Moncontrullo Hueso gordo que sirve para sustanciar la comida", "Hueso gordo que sirve para sustanciar la comida."),
+    Dictionary(207, "Moncontrullo", "Hueso gordo que sirve para sustanciar la comida."),
     Dictionary(208, "Monocotudo", "Manechi de color rojizo."),
     Dictionary(209, "Muchirí", "Tambo, cuyo nombre se le aplicó a un barrio de la ciudad de Santa Cruz de la Sierra."),
     Dictionary(210, "Murucuyá", "Fruta comestible de la familia sapotáceas."),

@@ -12,12 +12,12 @@
         tools:layout="@layout/fragment_main" />
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.locotoDevTeam.diccionariocamba.view.AboutFragment"
+        android:name="com.locotoDevTeam.diccionariocamba.view.about.AboutFragment"
         android:label="fragment_about"
         tools:layout="@layout/fragment_about" />
     <fragment
         android:id="@+id/slideFragment"
-        android:name="com.locotoDevTeam.diccionariocamba.view.SlideFragment"
+        android:name="com.locotoDevTeam.diccionariocamba.view.slide.SlideFragment"
         android:label="fragment_slide"
         tools:layout="@layout/fragment_slide" />
     <fragment
