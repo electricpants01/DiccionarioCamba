@@ -3,14 +3,18 @@
 
     <item
         android:id="@+id/mainFragment"
-        android:title="Item"
+        android:title="Diccionario"
         android:icon="@drawable/ic_baseline_auto_stories_24" />
     <item
         android:id="@+id/slideFragment"
-        android:title="Item"
+        android:title="Aprender"
         android:icon="@drawable/ic_baseline_lightbulb_24"/>
     <item
+        android:id="@+id/favoritesFragment"
+        android:title="Favoritos"
+        android:icon="@drawable/ic_baseline_star_24"/>
+    <item
         android:id="@+id/aboutFragment"
-        android:title="Item"
+        android:title="Acerca"
         android:icon="@drawable/ic_baseline_person_24"/>
 </menu>
