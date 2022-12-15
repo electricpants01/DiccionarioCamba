@@ -14,12 +14,16 @@ import com.locotoDevTeam.diccionariocamba.R
 import com.locotoDevTeam.diccionariocamba.databinding.FragmentDetailBinding
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
 
+interface DetailFragmentListener {
+    fun onDetailFragmentDismissed()
+}
 
-class DetailFragment : BottomSheetDialogFragment() {
+class DetailFragment(private var detailListener: DetailFragmentListener) : BottomSheetDialogFragment() {
 
     lateinit var binding: FragmentDetailBinding
     lateinit var dictionary: Dictionary
     val viewModel: DetailViewModel by activityViewModels()
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,6 +43,7 @@ class DetailFragment : BottomSheetDialogFragment() {
 
     override fun onDismiss(dialog: DialogInterface) {
         super.onDismiss(dialog)
+        detailListener.onDetailFragmentDismissed()
         println("chris 1")
     }
 
