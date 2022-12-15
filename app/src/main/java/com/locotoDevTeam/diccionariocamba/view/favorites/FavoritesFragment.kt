@@ -14,8 +14,9 @@ import com.locotoDevTeam.diccionariocamba.adapter.ItemDictionaryAdapter
 import com.locotoDevTeam.diccionariocamba.databinding.FragmentFavoritesBinding
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.view.detail.DetailFragment
+import com.locotoDevTeam.diccionariocamba.view.detail.DetailFragmentListener
 
-class FavoritesFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener {
+class FavoritesFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener, DetailFragmentListener {
 
     lateinit var binding: FragmentFavoritesBinding
     val viewmodel: FavoritesViewModel by viewModels()
@@ -43,8 +44,12 @@ class FavoritesFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener 
         binding.recyclerView.adapter = adapter
     }
 
+    override fun onDetailFragmentDismissed() {
+        viewmodel.getAllFavorites(requireContext())
+    }
+
     override fun onItemClick(item: Dictionary) {
-        val dialog = DetailFragment()
+        val dialog = DetailFragment(this@FavoritesFragment)
         dialog.dictionary = item
         if (!dialog.isAdded) dialog.show(childFragmentManager, "detailFragment")
 

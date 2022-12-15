@@ -14,8 +14,9 @@ import com.locotoDevTeam.diccionariocamba.model.DataSource
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.util.SharedPrefs
 import com.locotoDevTeam.diccionariocamba.view.detail.DetailFragment
+import com.locotoDevTeam.diccionariocamba.view.detail.DetailFragmentListener
 
-class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener {
+class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener, DetailFragmentListener {
 
     lateinit var binding: FragmentMainBinding
     private val viewmodel: MainFragmentViewModel by activityViewModels()
@@ -76,8 +77,12 @@ class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener {
         binding.recyclerView.adapter = adapter
     }
 
+    override fun onDetailFragmentDismissed() {
+        print("do something when detail fragment is dismissed")
+    }
+
     override fun onItemClick(item: Dictionary) {
-        val dialog = DetailFragment()
+        val dialog = DetailFragment(this@MainFragment)
         dialog.dictionary = item
         dialog.show(childFragmentManager, "detailFragment")
     }
