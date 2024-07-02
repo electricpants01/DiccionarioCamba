@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace 'com.locotoDevTeam.diccionariocamba'
-    compileSdk 32
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.locotoDevTeam.diccionariocamba"
         minSdk 21
-        targetSdk 32
+        targetSdk 34
         versionCode 5
         versionName "1.4"
 
