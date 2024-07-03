@@ -1,21 +1,21 @@
 package com.locotoDevTeam.diccionariocamba.view.favorites
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.locotoDevTeam.diccionariocamba.R
 import com.locotoDevTeam.diccionariocamba.adapter.ItemDictionaryAdapter
 import com.locotoDevTeam.diccionariocamba.databinding.FragmentFavoritesBinding
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.view.detail.DetailFragment
 import com.locotoDevTeam.diccionariocamba.view.detail.DetailFragmentListener
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class FavoritesFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener, DetailFragmentListener {
 
     lateinit var binding: FragmentFavoritesBinding
@@ -33,7 +33,7 @@ class FavoritesFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener,
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewmodel.getAllFavorites(requireContext())
+        viewmodel.getAllFavorites()
         initRecyclerView()
         initSubscriptions()
     }
@@ -45,7 +45,7 @@ class FavoritesFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener,
     }
 
     override fun onDetailFragmentDismissed() {
-        viewmodel.getAllFavorites(requireContext())
+        viewmodel.getAllFavorites()
     }
 
     override fun onItemClick(item: Dictionary) {

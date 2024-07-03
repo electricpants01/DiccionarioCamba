@@ -1,0 +1,2192 @@
+[
+  {
+    "id": 1,
+    "word": "Acopaibao",
+    "definition": "Se le dice al individuo torpe, de reacciones tardías.",
+    "isFavorite": null
+  },
+  {
+    "id": 2,
+    "word": "Afiltracao",
+    "definition": "Bien vestido.",
+    "isFavorite": null
+  },
+  {
+    "id": 3,
+    "word": "Ajilar",
+    "definition": "Agriar, fermentar.",
+    "isFavorite": null
+  },
+  {
+    "id": 4,
+    "word": "Almondrote",
+    "definition": "Comida de plátano verde y queso.",
+    "isFavorite": null
+  },
+  {
+    "id": 5,
+    "word": "Amboró",
+    "definition": "Según la leyenda, un cacique que se tranformó en el cerro al cual le dio su nombre.",
+    "isFavorite": null
+  },
+  {
+    "id": 6,
+    "word": "Anatuya",
+    "definition": "Pequeño cuadrúpedo que da mal olor.",
+    "isFavorite": null
+  },
+  {
+    "id": 7,
+    "word": "Apasanca",
+    "definition": "Arácnido peludo y ponzoñoso.",
+    "isFavorite": null
+  },
+  {
+    "id": 8,
+    "word": "Apestar",
+    "definition": "Heder",
+    "isFavorite": null
+  },
+  {
+    "id": 10,
+    "word": "Asimplao",
+    "definition": "Persona que es chistosa, simple en sus acciones.",
+    "isFavorite": null
+  },
+  {
+    "id": 11,
+    "word": "Atintilao",
+    "definition": "Acopaibao.",
+    "isFavorite": null
+  },
+  {
+    "id": 12,
+    "word": "Aurita",
+    "definition": "En este mismo instante. También se dice \" ahorita \".",
+    "isFavorite": null
+  },
+  {
+    "id": 13,
+    "word": "Baquitú",
+    "definition": "Soplador. Especie de abanico que se usa para avivar el fuego, hecho de hojas de motacú o del cogollo de alguna palmera.",
+    "isFavorite": null
+  },
+  {
+    "id": 14,
+    "word": "Barapucú",
+    "definition": "Voz guaraní que significa árbol alto.",
+    "isFavorite": null
+  },
+  {
+    "id": 15,
+    "word": "Barraca",
+    "definition": "En la época de la siringa se le llamaba a los puestos o establecimientos, actualmente se usa en las provincias Velasco y Ñuflo de Chaves.",
+    "isFavorite": null
+  },
+  {
+    "id": 16,
+    "word": "Barreno",
+    "definition": "Melaza.",
+    "isFavorite": null
+  },
+  {
+    "id": 17,
+    "word": "Bato",
+    "definition": "Ave del orden de las Zancudas.",
+    "isFavorite": null
+  },
+  {
+    "id": 18,
+    "word": "Bentón",
+    "definition": "Pez de la familia de los Gádidos.",
+    "isFavorite": null
+  },
+  {
+    "id": 19,
+    "word": "Besa",
+    "definition": "Afluente del río Moreno",
+    "isFavorite": null
+  },
+  {
+    "id": 20,
+    "word": "Bicubico",
+    "definition": "Cierto juguete de madera, que consiste en dos maderas y un muñeco, en el centro, colgado de un trapecio de pita.",
+    "isFavorite": null
+  },
+  {
+    "id": 21,
+    "word": "Bloqui",
+    "definition": "Acto de percutir con el dedo en la oreja de otra persona.",
+    "isFavorite": null
+  },
+  {
+    "id": 22,
+    "word": "Bocó",
+    "definition": "Especie de morral de los cazadores para llevar enseres de cacería, o su \" tapeque \".",
+    "isFavorite": null
+  },
+  {
+    "id": 23,
+    "word": "Bodoqui",
+    "definition": "Arco de madera, con cuerda para lanzar flechas.",
+    "isFavorite": null
+  },
+  {
+    "id": 24,
+    "word": "Borequi",
+    "definition": "Especie de la familia de las ranas. Se los ve pegados en las paredes y árboles.",
+    "isFavorite": null
+  },
+  {
+    "id": 25,
+    "word": "Borochi",
+    "definition": "Chacal, lobo de América. Felino de la familia de los cánidos (Canis rifus).",
+    "isFavorite": null
+  },
+  {
+    "id": 26,
+    "word": "Boyé",
+    "definition": "Variedad de boa.",
+    "isFavorite": null
+  },
+  {
+    "id": 27,
+    "word": "Bulto",
+    "definition": "Fantasma, aparecido.",
+    "isFavorite": null
+  },
+  {
+    "id": 28,
+    "word": "Buraca",
+    "definition": "Bolsa tejida con hojas de motacú.",
+    "isFavorite": null
+  },
+  {
+    "id": 29,
+    "word": "Buracú",
+    "definition": "Cuero de ganado en el cual se guarda arroz.",
+    "isFavorite": null
+  },
+  {
+    "id": 30,
+    "word": "Buri",
+    "definition": "Baile de arrabal, fiesta criolla ruidosa y alegre. Se la realiza en domicilios.",
+    "isFavorite": null
+  },
+  {
+    "id": 31,
+    "word": "Busubusu",
+    "definition": "Impresión que produce el miedo en el esfínter anal.",
+    "isFavorite": null
+  },
+  {
+    "id": 32,
+    "word": "Busutaraco",
+    "definition": "Lo que se esfuma.",
+    "isFavorite": null
+  },
+  {
+    "id": 33,
+    "word": "Butucún",
+    "definition": "Flor cerrada y cubierta por los sépalos, botón de flor.",
+    "isFavorite": null
+  },
+  {
+    "id": 34,
+    "word": "Butunta",
+    "definition": "Imbécil.",
+    "isFavorite": null
+  },
+  {
+    "id": 35,
+    "word": "Cabrestear",
+    "definition": "Seguir a la presa.",
+    "isFavorite": null
+  },
+  {
+    "id": 36,
+    "word": "Cacha",
+    "definition": "Baúl, arca de madera.",
+    "isFavorite": null
+  },
+  {
+    "id": 37,
+    "word": "Cachuela",
+    "definition": "Rompiente en la curva de los ríos.",
+    "isFavorite": null
+  },
+  {
+    "id": 38,
+    "word": "Caichuné",
+    "definition": "Angurria de devorar.",
+    "isFavorite": null
+  },
+  {
+    "id": 39,
+    "word": "Callapo",
+    "definition": "Balsa para navegación en los ríos.",
+    "isFavorite": null
+  },
+  {
+    "id": 40,
+    "word": "Camba",
+    "definition": "Nombre con que se conoce a los indígenas civilizados del Oriente boliviano.",
+    "isFavorite": null
+  },
+  {
+    "id": 41,
+    "word": "Cambijochi",
+    "definition": "Indio guaraní de pura sangre. Pelada.",
+    "isFavorite": null
+  },
+  {
+    "id": 42,
+    "word": "Canchón",
+    "definition": "Patio.",
+    "isFavorite": null
+  },
+  {
+    "id": 43,
+    "word": "Candirú",
+    "definition": "Pez de río.",
+    "isFavorite": null
+  },
+  {
+    "id": 45,
+    "word": "Caneco",
+    "definition": "Vaso con asa para beber agua, hecho generalmente de guayacán.",
+    "isFavorite": null
+  },
+  {
+    "id": 46,
+    "word": "Capirotada",
+    "definition": "Guiso de harina de maíz, queso y carne.",
+    "isFavorite": null
+  },
+  {
+    "id": 47,
+    "word": "Carnaval",
+    "definition": "Música típica de Santa Cruz en compases de seis por ocho.",
+    "isFavorite": null
+  },
+  {
+    "id": 48,
+    "word": "Catinga",
+    "definition": "Aficionado a vestir bien.",
+    "isFavorite": null
+  },
+  {
+    "id": 49,
+    "word": "Cocererú",
+    "definition": "Chuisaó o peji llorón. Desdentado que vive en cuevas bajo tierra. Emite un ruído como llanto de niño recién nacido.",
+    "isFavorite": null
+  },
+  {
+    "id": 50,
+    "word": "Cochoé",
+    "definition": "Pato.",
+    "isFavorite": null
+  },
+  {
+    "id": 51,
+    "word": "Coleador",
+    "definition": "Sablista. Persona que se apega a otras para aprovechar las atenciones de una fiesta. Conjeturando Se dice del tiempo cuando oscurece para llover. Cambio atmosférico.",
+    "isFavorite": null
+  },
+  {
+    "id": 52,
+    "word": "Coñichi",
+    "definition": "Residuos del cumpleaños anterior.",
+    "isFavorite": null
+  },
+  {
+    "id": 53,
+    "word": "Corechi",
+    "definition": "Desdentado pequeño, parecido al armadillo.",
+    "isFavorite": null
+  },
+  {
+    "id": 54,
+    "word": "Cotibí",
+    "definition": "Raya que se hace en el cabello para compartirlo en el peinado.",
+    "isFavorite": null
+  },
+  {
+    "id": 55,
+    "word": "Cotiojo",
+    "definition": "Mirar de reojo.",
+    "isFavorite": null
+  },
+  {
+    "id": 56,
+    "word": "Cuchuqui",
+    "definition": "Sucio.",
+    "isFavorite": null
+  },
+  {
+    "id": 57,
+    "word": "Cuco",
+    "definition": "Cigarra.",
+    "isFavorite": null
+  },
+  {
+    "id": 58,
+    "word": "Cujuchi",
+    "definition": "Topo.",
+    "isFavorite": null
+  },
+  {
+    "id": 59,
+    "word": "Cunumi",
+    "definition": "Niño, muchacho indígena civilizado.",
+    "isFavorite": null
+  },
+  {
+    "id": 60,
+    "word": "Cuña",
+    "definition": "Mujer guaraya o guaraní.",
+    "isFavorite": null
+  },
+  {
+    "id": 61,
+    "word": "Cuñapé",
+    "definition": "Pan de almidón y queso.",
+    "isFavorite": null
+  },
+  {
+    "id": 62,
+    "word": "Cuquisa",
+    "definition": "Paloma cuyo tamaño media entre la chaicita y la torcaza.",
+    "isFavorite": null
+  },
+  {
+    "id": 63,
+    "word": "Curichi",
+    "definition": "Pantano, lodazal.",
+    "isFavorite": null
+  },
+  {
+    "id": 64,
+    "word": "Curucusí",
+    "definition": "Luciérnaga (Lampirus noctiluca).",
+    "isFavorite": null
+  },
+  {
+    "id": 65,
+    "word": "Cutuchi",
+    "definition": "Vertebrado del orden de los Apodos (Cecilia Lumbricoides).",
+    "isFavorite": null
+  },
+  {
+    "id": 66,
+    "word": "Cuyabo",
+    "definition": "Ave nocturna.",
+    "isFavorite": null
+  },
+  {
+    "id": 67,
+    "word": "Chaco",
+    "definition": "Terreno con sementera.",
+    "isFavorite": null
+  },
+  {
+    "id": 68,
+    "word": "Chafra",
+    "definition": "Astillas de leña o pedazos de ramas secas.",
+    "isFavorite": null
+  },
+  {
+    "id": 69,
+    "word": "Chaicita(Chai)",
+    "definition": "Especie de paloma pequeña.",
+    "isFavorite": null
+  },
+  {
+    "id": 70,
+    "word": "Chananga",
+    "definition": "En el juego de las bolas.",
+    "isFavorite": null
+  },
+  {
+    "id": 71,
+    "word": "Chapulear",
+    "definition": "Lo que ocurre, por el movimiento, cuando en un recipiente se lleva líquido.",
+    "isFavorite": null
+  },
+  {
+    "id": 72,
+    "word": "Chaquira",
+    "definition": "Bolas de cristal pequeñas.",
+    "isFavorite": null
+  },
+  {
+    "id": 73,
+    "word": "Chara",
+    "definition": "Rana de color verde (Ila Arvborea).",
+    "isFavorite": null
+  },
+  {
+    "id": 74,
+    "word": "Charachará",
+    "definition": "Masita de clara de huevo con azúcar.",
+    "isFavorite": null
+  },
+  {
+    "id": 75,
+    "word": "Charapa",
+    "definition": "Camastro.",
+    "isFavorite": null
+  },
+  {
+    "id": 76,
+    "word": "Charque",
+    "definition": "Carne seca.",
+    "isFavorite": null
+  },
+  {
+    "id": 77,
+    "word": "Charuto",
+    "definition": "Cigarro de tabaco negro, envuelto en hojas finas de chala de maíz.",
+    "isFavorite": null
+  },
+  {
+    "id": 78,
+    "word": "Cheruje",
+    "definition": "Comida.",
+    "isFavorite": null
+  },
+  {
+    "id": 79,
+    "word": "Chicha",
+    "definition": "Bebida refrescante hecha de harina de maíz.",
+    "isFavorite": null
+  },
+  {
+    "id": 80,
+    "word": "Chichuriro",
+    "definition": "Pájaro pequeño muy casero.",
+    "isFavorite": null
+  },
+  {
+    "id": 81,
+    "word": "Chicó",
+    "definition": "Estremecimiento de los nervios. Adormecimiento de los músculos.",
+    "isFavorite": null
+  },
+  {
+    "id": 82,
+    "word": "Chicote",
+    "definition": "Látigo.",
+    "isFavorite": null
+  },
+  {
+    "id": 83,
+    "word": "Chilchi",
+    "definition": "Llovizna.",
+    "isFavorite": null
+  },
+  {
+    "id": 84,
+    "word": "Chima",
+    "definition": "Pan de jachi de maíz, con carne y queso.",
+    "isFavorite": null
+  },
+  {
+    "id": 85,
+    "word": "Chimori",
+    "definition": "Aborígenes de la provincia Velasco.",
+    "isFavorite": null
+  },
+  {
+    "id": 86,
+    "word": "Chinga",
+    "definition": "Dícese de lo que ha desaparecido.",
+    "isFavorite": null
+  },
+  {
+    "id": 87,
+    "word": "Chiñi",
+    "definition": "Ave nocturna de la familia de las lechuzas.",
+    "isFavorite": null
+  },
+  {
+    "id": 88,
+    "word": "Chiñuelo",
+    "definition": "Los que volvían de las regiones gomeras, bien vestidos y rumboso, para aparentar que allá se ganaba bien; esto con el objeto de atraer otros individuos a la industria gomera, dentro de la modalidad del \" reenganche \" (H.S.F.).",
+    "isFavorite": null
+  },
+  {
+    "id": 89,
+    "word": "Chío",
+    "definition": "Cariado.",
+    "isFavorite": null
+  },
+  {
+    "id": 90,
+    "word": "Chipeno",
+    "definition": "Vasija de barro cocido, sin asa, más pequeño que el tichibó. Se emplea generalmente para echar somó o chicha.",
+    "isFavorite": null
+  },
+  {
+    "id": 91,
+    "word": "Chiquiyú",
+    "definition": "Ligoso.",
+    "isFavorite": null
+  },
+  {
+    "id": 92,
+    "word": "Chirapa",
+    "definition": "Prenda de vestir raída y vieja.",
+    "isFavorite": null
+  },
+  {
+    "id": 93,
+    "word": "Chivé",
+    "definition": "Harina que se obtiene de la yuca.",
+    "isFavorite": null
+  },
+  {
+    "id": 94,
+    "word": "Chivo",
+    "definition": "Juego popular de El Palmar. Muy famoso el de la familia Alpire.",
+    "isFavorite": null
+  },
+  {
+    "id": 95,
+    "word": "Choco(a)",
+    "definition": "Persona de cabello castaño claro.",
+    "isFavorite": null
+  },
+  {
+    "id": 96,
+    "word": "Cholón",
+    "definition": "Sonadijo de la barriga.",
+    "isFavorite": null
+  },
+  {
+    "id": 97,
+    "word": "Chopochoro",
+    "definition": "Pájaro, cuyo canto es semejante a su nombre.",
+    "isFavorite": null
+  },
+  {
+    "id": 98,
+    "word": "Chori",
+    "definition": "Nombre que se da a los indios salvajes.",
+    "isFavorite": null
+  },
+  {
+    "id": 99,
+    "word": "Choropa",
+    "definition": "Indígena de la provincia Ichilo, perteneciente al grupo étnico y lingüistico Chiquito. En castellano: amigo (H.S.F.).",
+    "isFavorite": null
+  },
+  {
+    "id": 100,
+    "word": "Chota",
+    "definition": "Muchacha joven.",
+    "isFavorite": null
+  },
+  {
+    "id": 101,
+    "word": "Chotota",
+    "definition": "Hormiga grande que se alimenta especialmente de azúcar.",
+    "isFavorite": null
+  },
+  {
+    "id": 102,
+    "word": "Chovena",
+    "definition": "Música nativa de Santa Cruz que se escribe en compases de tres por cuatro.",
+    "isFavorite": null
+  },
+  {
+    "id": 103,
+    "word": "Chulún",
+    "definition": "Caer en el agua.",
+    "isFavorite": null
+  },
+  {
+    "id": 104,
+    "word": "Chulupaca",
+    "definition": "Variedad de chulupi, mucho más grande.",
+    "isFavorite": null
+  },
+  {
+    "id": 105,
+    "word": "Chulupi",
+    "definition": "Cucaracha. Chunchulíses.Menudo de tripa delgada de res.",
+    "isFavorite": null
+  },
+  {
+    "id": 106,
+    "word": "Chupa",
+    "definition": "Adulón y servil.",
+    "isFavorite": null
+  },
+  {
+    "id": 107,
+    "word": "Chupliqui",
+    "definition": "Persona delgada. Tambien se le dice a la mujer que usa el vestido muy ajustado, ceñido.",
+    "isFavorite": null
+  },
+  {
+    "id": 108,
+    "word": "Churuno",
+    "definition": "Vasija hecha de tutuma con boca ancha y tapa, para guardar sólidos.",
+    "isFavorite": null
+  },
+  {
+    "id": 109,
+    "word": "Chuto",
+    "definition": "Corto, inconcluso.",
+    "isFavorite": null
+  },
+  {
+    "id": 110,
+    "word": "Chuturubí",
+    "definition": "Avispa agresiva y de picadura muy dolorosa. Se aplica también al individuo que acomete ciego de cólera (H.S.F.).",
+    "isFavorite": null
+  },
+  {
+    "id": 111,
+    "word": "Deñeque",
+    "definition": "Hombre fuerte, de agallas.",
+    "isFavorite": null
+  },
+  {
+    "id": 112,
+    "word": "Depliqi",
+    "definition": "De mentira.",
+    "isFavorite": null
+  },
+  {
+    "id": 113,
+    "word": "Dejuañango",
+    "definition": "Desorden de cosas.",
+    "isFavorite": null
+  },
+  {
+    "id": 114,
+    "word": "Ejene",
+    "definition": "Insecto hematófago.",
+    "isFavorite": null
+  },
+  {
+    "id": 115,
+    "word": "Elay(Helay)",
+    "definition": "Helo ahí.",
+    "isFavorite": null
+  },
+  {
+    "id": 116,
+    "word": "Empacarse",
+    "definition": "Encapricharse",
+    "isFavorite": null
+  },
+  {
+    "id": 117,
+    "word": "Emplumarla",
+    "definition": "Huir, irse, desaparecer",
+    "isFavorite": null
+  },
+  {
+    "id": 118,
+    "word": "Emponchao",
+    "definition": "Cigarrillo de tabaco negro ordinario, envuelto a mano.",
+    "isFavorite": null
+  },
+  {
+    "id": 119,
+    "word": "Emporrar",
+    "definition": "Apareamiento de animales cuadrúpedos.",
+    "isFavorite": null
+  },
+  {
+    "id": 120,
+    "word": "Encocorarse",
+    "definition": "Alborotarse",
+    "isFavorite": null
+  },
+  {
+    "id": 121,
+    "word": "Enrollao",
+    "definition": "Carne de cerdo preparada en forma de rollos.",
+    "isFavorite": null
+  },
+  {
+    "id": 122,
+    "word": "Entierro",
+    "definition": "Tesoro oculto o enterrado en el suelo.",
+    "isFavorite": null
+  },
+  {
+    "id": 123,
+    "word": "Eredeú",
+    "definition": "Abeja.",
+    "isFavorite": null
+  },
+  {
+    "id": 124,
+    "word": "Escuro",
+    "definition": "Oscuro. Antiguamente se decía en Santa Cruz \"ehjcuro\", \"ehjcurana\".",
+    "isFavorite": null
+  },
+  {
+    "id": 125,
+    "word": "Fajinista",
+    "definition": "Persona porfiada y testaruda.",
+    "isFavorite": null
+  },
+  {
+    "id": 126,
+    "word": "Fefeinte",
+    "definition": "Dos veces veinte.",
+    "isFavorite": null
+  },
+  {
+    "id": 127,
+    "word": "Funfuñó",
+    "definition": "Canto lúgubre de ciertas aves.",
+    "isFavorite": null
+  },
+  {
+    "id": 128,
+    "word": "Gambeta",
+    "definition": "Modales graciosos del rostro o del cuerpo que hace un hombre a una mujer o viceversa. Coquetería.",
+    "isFavorite": null
+  },
+  {
+    "id": 129,
+    "word": "Grigotá",
+    "definition": "Cacique de los indios chanés, primitivos pobladores de Santa Cruz.",
+    "isFavorite": null
+  },
+  {
+    "id": 130,
+    "word": "Guacha",
+    "definition": "Dícese del animal huérfano.",
+    "isFavorite": null
+  },
+  {
+    "id": 131,
+    "word": "Guajojó",
+    "definition": "Ave nocturna, la más pequeña de los búhos, que emite un canto lúgubre y largo, análogo a una serie de gemidos (H.S.F.). Antes se creía que era de mala suerte.",
+    "isFavorite": null
+  },
+  {
+    "id": 132,
+    "word": "Guampa",
+    "definition": "Corneta (asta) del marucho.",
+    "isFavorite": null
+  },
+  {
+    "id": 133,
+    "word": "Guarayo",
+    "definition": "Indígena de la tribu de ese nombre, de estirpe guaraní.",
+    "isFavorite": null
+  },
+  {
+    "id": 134,
+    "word": "Guariflé",
+    "definition": "Bebida de huevo batido en agua caliente con licor.",
+    "isFavorite": null
+  },
+  {
+    "id": 135,
+    "word": "Guatía",
+    "definition": "Cabeza de res preparada y asada al horno.",
+    "isFavorite": null
+  },
+  {
+    "id": 136,
+    "word": "Horquillazo",
+    "definition": "Empujón con la mano en palca, dado en el cuello de otro.",
+    "isFavorite": null
+  },
+  {
+    "id": 137,
+    "word": "Insirirí",
+    "definition": "Raquítico.",
+    "isFavorite": null
+  },
+  {
+    "id": 138,
+    "word": "Jaba",
+    "definition": "Encías crecidas de los caballos.",
+    "isFavorite": null
+  },
+  {
+    "id": 139,
+    "word": "Jachi",
+    "definition": "Sedimento de café o desechos de harina de maíz.",
+    "isFavorite": null
+  },
+  {
+    "id": 140,
+    "word": "Jacuú",
+    "definition": "Pan, yuca o algo similiar que se acompaña con la comida o bebida.",
+    "isFavorite": null
+  },
+  {
+    "id": 141,
+    "word": "Jancara",
+    "definition": "Mate de gran tamaño.",
+    "isFavorite": null
+  },
+  {
+    "id": 142,
+    "word": "Janucho",
+    "definition": "Farsante. Simple.",
+    "isFavorite": null
+  },
+  {
+    "id": 143,
+    "word": "Jara",
+    "definition": "Hojas de palmera, colocadas a manera de techo de una agua, que hacen los campesinos o cazadores para resguardarse de la lluvia.",
+    "isFavorite": null
+  },
+  {
+    "id": 144,
+    "word": "Jarichi",
+    "definition": "Tira de trapo a manera de trenza para el cabello.",
+    "isFavorite": null
+  },
+  {
+    "id": 145,
+    "word": "Jarón",
+    "definition": "Cansado por trabajo bajo el sol tropical.",
+    "isFavorite": null
+  },
+  {
+    "id": 146,
+    "word": "Jasayé",
+    "definition": "Tejido de hojas de motacú en forma de bolsa.",
+    "isFavorite": null
+  },
+  {
+    "id": 147,
+    "word": "Jatapú",
+    "definition": "Espuma que produce el jabón.",
+    "isFavorite": null
+  },
+  {
+    "id": 148,
+    "word": "Jato",
+    "definition": "Una pieza o conjunto de ropa.",
+    "isFavorite": null
+  },
+  {
+    "id": 149,
+    "word": "Jau",
+    "definition": "Voz equivalente a ¡oye!",
+    "isFavorite": null
+  },
+  {
+    "id": 150,
+    "word": "Jausi",
+    "definition": "Reptil de color verde, media entre la lagartija y el peni.",
+    "isFavorite": null
+  },
+  {
+    "id": 151,
+    "word": "Javajú",
+    "definition": "Resto de jabón. Fruta que mientras más madura, más fruncida.",
+    "isFavorite": null
+  },
+  {
+    "id": 152,
+    "word": "Jeborá",
+    "definition": "Desecho en los panales de miel.",
+    "isFavorite": null
+  },
+  {
+    "id": 153,
+    "word": "Jenecherú",
+    "definition": "Leña gruesa o tizón que se deja arder toda la noche sin apagarse, para que amanezca fuego.",
+    "isFavorite": null
+  },
+  {
+    "id": 154,
+    "word": "Jetapú",
+    "definition": "Cuña. Lo que se incrusta por debajo de una cosa para que se fije.",
+    "isFavorite": null
+  },
+  {
+    "id": 155,
+    "word": "Ji",
+    "definition": "Voz de mando para los bueyes",
+    "isFavorite": null
+  },
+  {
+    "id": 156,
+    "word": "Jichi",
+    "definition": "Monstruo fabuloso que, se dice, habita en ciertas lagunas que no se secan nunca. Persona diestra para ciertas actividades.",
+    "isFavorite": null
+  },
+  {
+    "id": 157,
+    "word": "Jichimora",
+    "definition": "Variedad de ofidio.",
+    "isFavorite": null
+  },
+  {
+    "id": 158,
+    "word": "Jichiquií",
+    "definition": "Astillas largas y flexibles que se sacan de las hojas de motacú.",
+    "isFavorite": null
+  },
+  {
+    "id": 159,
+    "word": "Jichitarumá",
+    "definition": "Variedad de pájaro.",
+    "isFavorite": null
+  },
+  {
+    "id": 160,
+    "word": "Jichuchí",
+    "definition": "Desechos de maíz seleccionado.",
+    "isFavorite": null
+  },
+  {
+    "id": 161,
+    "word": "Jigote",
+    "definition": "Relleno de la empanada u otro plato.",
+    "isFavorite": null
+  },
+  {
+    "id": 162,
+    "word": "Jipato",
+    "definition": "Flojedad de los caballos cuando comienzan a engordar.",
+    "isFavorite": null
+  },
+  {
+    "id": 163,
+    "word": "Jipurí",
+    "definition": "Raicilla interior de la yuca.",
+    "isFavorite": null
+  },
+  {
+    "id": 164,
+    "word": "Jisunú",
+    "definition": "Huevo sobre el que pone la gallina.",
+    "isFavorite": null
+  },
+  {
+    "id": 165,
+    "word": "Jitamucú",
+    "definition": "Estiércol de perro.",
+    "isFavorite": null
+  },
+  {
+    "id": 166,
+    "word": "Jobobosí",
+    "definition": "Especie de abeja silvestre.",
+    "isFavorite": null
+  },
+  {
+    "id": 167,
+    "word": "Jocha",
+    "definition": "Trastada.",
+    "isFavorite": null
+  },
+  {
+    "id": 168,
+    "word": "Jochear",
+    "definition": "Sinónimo de torear.",
+    "isFavorite": null
+  },
+  {
+    "id": 169,
+    "word": "Jochi",
+    "definition": "Roedor silvestre que ataca las sementeras.",
+    "isFavorite": null
+  },
+  {
+    "id": 170,
+    "word": "Joíchi",
+    "definition": "Polilla.",
+    "isFavorite": null
+  },
+  {
+    "id": 171,
+    "word": "Jometoto",
+    "definition": "Espátula grande de madera para batir ciertos alimentos en su preparación.",
+    "isFavorite": null
+  },
+  {
+    "id": 172,
+    "word": "Jone",
+    "definition": "Pedazo de ladrillo.",
+    "isFavorite": null
+  },
+  {
+    "id": 173,
+    "word": "Jopo",
+    "definition": "Mechón de cabello que sobresale en la cabeza.",
+    "isFavorite": null
+  },
+  {
+    "id": 174,
+    "word": "Jorebaré",
+    "definition": "Hormiga pequeña de color rojizo y olor penetrante.",
+    "isFavorite": null
+  },
+  {
+    "id": 175,
+    "word": "Jucumari",
+    "definition": "Oso sudamericano.",
+    "isFavorite": null
+  },
+  {
+    "id": 176,
+    "word": "Jumbacá",
+    "definition": "Estiércol de ganado vacuno.",
+    "isFavorite": null
+  },
+  {
+    "id": 177,
+    "word": "Jumbarayú",
+    "definition": "Estiércol de gallina.",
+    "isFavorite": null
+  },
+  {
+    "id": 178,
+    "word": "Jumechi",
+    "definition": "Aguardiente.",
+    "isFavorite": null
+  },
+  {
+    "id": 179,
+    "word": "Jumetrear",
+    "definition": "Fastidiar, zarandear.",
+    "isFavorite": null
+  },
+  {
+    "id": 180,
+    "word": "Keresa",
+    "definition": "Huevos de mosca sobre la carne.",
+    "isFavorite": null
+  },
+  {
+    "id": 182,
+    "word": "Lampión",
+    "definition": "Lámpara a kerosén.",
+    "isFavorite": null
+  },
+  {
+    "id": 183,
+    "word": "Locro",
+    "definition": "Comida de arroz, carne y yuca o plátano.",
+    "isFavorite": null
+  },
+  {
+    "id": 184,
+    "word": "Lopopo",
+    "definition": "Párpado hinchado.",
+    "isFavorite": null
+  },
+  {
+    "id": 185,
+    "word": "Machorro",
+    "definition": "Apelativo que se le da indistintamente al humano y al animal que no procrea. .",
+    "isFavorite": null
+  },
+  {
+    "id": 186,
+    "word": "Macono",
+    "definition": "Ave de rapiña que caza al vuelo a las víboras.",
+    "isFavorite": null
+  },
+  {
+    "id": 187,
+    "word": "Maipubá",
+    "definition": "Afluente del Güendá; corre entre los ríos El Pato y Jorge.",
+    "isFavorite": null
+  },
+  {
+    "id": 188,
+    "word": "Majao",
+    "definition": "Comida de arroz con carne majada.",
+    "isFavorite": null
+  },
+  {
+    "id": 189,
+    "word": "Mamesó",
+    "definition": "Desvencimiento de cabeza.",
+    "isFavorite": null
+  },
+  {
+    "id": 190,
+    "word": "Manechi",
+    "definition": "Especie de mono grande, cotudo.",
+    "isFavorite": null
+  },
+  {
+    "id": 191,
+    "word": "Manene",
+    "definition": "Que mana.",
+    "isFavorite": null
+  },
+  {
+    "id": 192,
+    "word": "Mañaso",
+    "definition": "El que derriba ganado para vender carne o destinarla al consumo de la hacienda.",
+    "isFavorite": null
+  },
+  {
+    "id": 193,
+    "word": "Maraca",
+    "definition": "Redoblar del tambor como preludio para la ejecución de un carnaval.",
+    "isFavorite": null
+  },
+  {
+    "id": 194,
+    "word": "Marigüí",
+    "definition": "Mosquito cuya picadura, bastante molesta, deja debajo de la piel una gota de sangre.",
+    "isFavorite": null
+  },
+  {
+    "id": 195,
+    "word": "Masaco",
+    "definition": "Pasta de yuca o plátano cocido, con carne, chicharrón o queso, molida en tacú.",
+    "isFavorite": null
+  },
+  {
+    "id": 196,
+    "word": "Matato",
+    "definition": "Cucharón hecho de una fruta para trasvasijar líquidos. \"Buenos matatos\": buenas razones.",
+    "isFavorite": null
+  },
+  {
+    "id": 197,
+    "word": "Matatuza",
+    "definition": "Golpe en la mano de otra persona para hacer caer la cosa tenida.",
+    "isFavorite": null
+  },
+  {
+    "id": 198,
+    "word": "Mate",
+    "definition": "Vasija hecha del fruto de esa planta.",
+    "isFavorite": null
+  },
+  {
+    "id": 199,
+    "word": "Matufia",
+    "definition": "Malos manejos económicos. Fraude.",
+    "isFavorite": null
+  },
+  {
+    "id": 200,
+    "word": "Matusi",
+    "definition": "Caballo viejo y flaco.",
+    "isFavorite": null
+  },
+  {
+    "id": 201,
+    "word": "Mauri",
+    "definition": "Pájaro negro insectívoro que vive en los barbechos.",
+    "isFavorite": null
+  },
+  {
+    "id": 202,
+    "word": "Metapaso",
+    "definition": "Juego de niños.",
+    "isFavorite": null
+  },
+  {
+    "id": 203,
+    "word": "Michi",
+    "definition": "Gato.",
+    "isFavorite": null
+  },
+  {
+    "id": 204,
+    "word": "Minga",
+    "definition": "Trabajo campestre que se hace por comida en un solo día.",
+    "isFavorite": null
+  },
+  {
+    "id": 205,
+    "word": "Mocheó",
+    "definition": "Estado enfermizo de los niños, creyéndose su contagio por la exhalación del gas de los muertos.",
+    "isFavorite": null
+  },
+  {
+    "id": 206,
+    "word": "Mocherú",
+    "definition": "Planta que tumba sus flores sin llegar a dar fruto.",
+    "isFavorite": null
+  },
+  {
+    "id": 207,
+    "word": "Moncontrullo",
+    "definition": "Hueso gordo que sirve para sustanciar la comida.",
+    "isFavorite": null
+  },
+  {
+    "id": 208,
+    "word": "Monocotudo",
+    "definition": "Manechi de color rojizo.",
+    "isFavorite": null
+  },
+  {
+    "id": 209,
+    "word": "Muchirí",
+    "definition": "Tambo, cuyo nombre se le aplicó a un barrio de la ciudad de Santa Cruz de la Sierra.",
+    "isFavorite": null
+  },
+  {
+    "id": 210,
+    "word": "Murucuyá",
+    "definition": "Fruta comestible de la familia sapotáceas.",
+    "isFavorite": null
+  },
+  {
+    "id": 211,
+    "word": "Musunguelas",
+    "definition": "Muchachas callejeras.",
+    "isFavorite": null
+  },
+  {
+    "id": 212,
+    "word": "Mutún",
+    "definition": "Serranía con una colosal reserva de hierro y manganeso.",
+    "isFavorite": null
+  },
+  {
+    "id": 213,
+    "word": "Ñamurucú",
+    "definition": "Reunir escasos ingredientes para un locro. Cambio.",
+    "isFavorite": null
+  },
+  {
+    "id": 214,
+    "word": "Ocoró",
+    "definition": "Estado de la comida agria.",
+    "isFavorite": null
+  },
+  {
+    "id": 215,
+    "word": "Orocepeó",
+    "definition": "Variedad de abeja silvestre.",
+    "isFavorite": null
+  },
+  {
+    "id": 216,
+    "word": "Osamenta",
+    "definition": "Cadáver descompuesto",
+    "isFavorite": null
+  },
+  {
+    "id": 217,
+    "word": "Paco",
+    "definition": "Soldado de policía.",
+    "isFavorite": null
+  },
+  {
+    "id": 218,
+    "word": "Paculita",
+    "definition": "Lorita de muchos colores.",
+    "isFavorite": null
+  },
+  {
+    "id": 219,
+    "word": "Pacumuto",
+    "definition": "Varilla de madera que sirve para asar carne.",
+    "isFavorite": null
+  },
+  {
+    "id": 220,
+    "word": "Pagüichi",
+    "definition": "Casa rústica de campo, techada con hojas de motacú.",
+    "isFavorite": null
+  },
+  {
+    "id": 221,
+    "word": "Pajona",
+    "definition": "Muchacha v.a.",
+    "isFavorite": null
+  },
+  {
+    "id": 222,
+    "word": "Palometa",
+    "definition": "Pez muy voraz. Piraña .",
+    "isFavorite": null
+  },
+  {
+    "id": 223,
+    "word": "Panacú",
+    "definition": "Tejido de hojas de motacú a manera de bolsa pero más grande que el jasayé.",
+    "isFavorite": null
+  },
+  {
+    "id": 224,
+    "word": "Paraba",
+    "definition": "Guacamayo.",
+    "isFavorite": null
+  },
+  {
+    "id": 225,
+    "word": "Parichi",
+    "definition": "Estera trenzada con una sola hoja de motacú.",
+    "isFavorite": null
+  },
+  {
+    "id": 226,
+    "word": "Patasca",
+    "definition": "Comida de carne y maíz.",
+    "isFavorite": null
+  },
+  {
+    "id": 227,
+    "word": "Patengue",
+    "definition": "Los que no pisan firmes.",
+    "isFavorite": null
+  },
+  {
+    "id": 228,
+    "word": "Patuleca",
+    "definition": "Dícese de la persona cuyas piernas hacen dengues al caminar.",
+    "isFavorite": null
+  },
+  {
+    "id": 229,
+    "word": "Paúro",
+    "definition": "Pozo de agua poco profundo.",
+    "isFavorite": null
+  },
+  {
+    "id": 230,
+    "word": "Pelada",
+    "definition": "Niña, muchacha joven.",
+    "isFavorite": null
+  },
+  {
+    "id": 231,
+    "word": "Peni",
+    "definition": "Reptil de la familia de los Saurios.",
+    "isFavorite": null
+  },
+  {
+    "id": 232,
+    "word": "Peroquí",
+    "definition": "Gallinazo de cabeza y cuello desplumado; se alimenta de osamentas. Ave de rapíña.",
+    "isFavorite": null
+  },
+  {
+    "id": 233,
+    "word": "Peta",
+    "definition": "Tortuga.",
+    "isFavorite": null
+  },
+  {
+    "id": 234,
+    "word": "Peto",
+    "definition": "Avispa.",
+    "isFavorite": null
+  },
+  {
+    "id": 235,
+    "word": "Picao",
+    "definition": "Comida de arroz, carne y yuca picada.",
+    "isFavorite": null
+  },
+  {
+    "id": 236,
+    "word": "Pichaí",
+    "definition": "Plegado, fruncido. Referente a los géneros.",
+    "isFavorite": null
+  },
+  {
+    "id": 237,
+    "word": "Pichi",
+    "definition": "Pene.",
+    "isFavorite": null
+  },
+  {
+    "id": 238,
+    "word": "Pichiró",
+    "definition": "Sabor de la fruta que no está bien madura.",
+    "isFavorite": null
+  },
+  {
+    "id": 239,
+    "word": "Pico",
+    "definition": "Colmena de abeja silvestre.",
+    "isFavorite": null
+  },
+  {
+    "id": 240,
+    "word": "Pije",
+    "definition": "Bien vestido.",
+    "isFavorite": null
+  },
+  {
+    "id": 241,
+    "word": "Pila",
+    "definition": "Pies descalzos.",
+    "isFavorite": null
+  },
+  {
+    "id": 242,
+    "word": "Pinganillo",
+    "definition": "Pije, elegante.",
+    "isFavorite": null
+  },
+  {
+    "id": 243,
+    "word": "Piroco",
+    "definition": "Gallo pescueso pelado.",
+    "isFavorite": null
+  },
+  {
+    "id": 244,
+    "word": "Pitaí",
+    "definition": "Erupción cutánea con escozor, producida por el calor.",
+    "isFavorite": null
+  },
+  {
+    "id": 245,
+    "word": "Piyo",
+    "definition": "Avestruz.",
+    "isFavorite": null
+  },
+  {
+    "id": 246,
+    "word": "Plequecó",
+    "definition": "Desvensijado.",
+    "isFavorite": null
+  },
+  {
+    "id": 247,
+    "word": "Pochecó",
+    "definition": "Aburrido, hastiado, acobardado.",
+    "isFavorite": null
+  },
+  {
+    "id": 248,
+    "word": "Pohmeta",
+    "definition": "Camba trompeta, con mal humor.",
+    "isFavorite": null
+  },
+  {
+    "id": 249,
+    "word": "Pollenquenque Mentecato, tonto y destraído",
+    "definition": "Mentecato, tonto y destraído.",
+    "isFavorite": null
+  },
+  {
+    "id": 250,
+    "word": "Ponjear",
+    "definition": "Paunjesear. Colocar el maiz todavía en chala, atado por dos extremos de las hojas, a manera de alforja.",
+    "isFavorite": null
+  },
+  {
+    "id": 251,
+    "word": "Popechi",
+    "definition": "Que tiene un dedo más.",
+    "isFavorite": null
+  },
+  {
+    "id": 252,
+    "word": "Popí",
+    "definition": "Manchas producidas por hongos en la ropa que se deja amontonada, humeda y a medio lavar.",
+    "isFavorite": null
+  },
+  {
+    "id": 253,
+    "word": "Pororó",
+    "definition": "Tostado de maíz que revienta a guisa de flor.",
+    "isFavorite": null
+  },
+  {
+    "id": 254,
+    "word": "Posetacú",
+    "definition": "Hormiguero formado en las ramas de los gruesos árboles.",
+    "isFavorite": null
+  },
+  {
+    "id": 255,
+    "word": "Puchapucha",
+    "definition": "Planta despreciable.",
+    "isFavorite": null
+  },
+  {
+    "id": 256,
+    "word": "Puguilla",
+    "definition": "Adolescente.",
+    "isFavorite": null
+  },
+  {
+    "id": 257,
+    "word": "Puján",
+    "definition": "Pan de maíz a la ligera.",
+    "isFavorite": null
+  },
+  {
+    "id": 258,
+    "word": "Pujusó",
+    "definition": "Lama u hongos que por efecto de la humedad cubren las cosas.",
+    "isFavorite": null
+  },
+  {
+    "id": 259,
+    "word": "Pululé",
+    "definition": "Persona de carnes flojas y descolgadas.",
+    "isFavorite": null
+  },
+  {
+    "id": 260,
+    "word": "Punilla",
+    "definition": "Especie de antesala, descubierto de paredes, en una casa de campo.",
+    "isFavorite": null
+  },
+  {
+    "id": 261,
+    "word": "Putirí",
+    "definition": "Variedad de pato salvaje volador.",
+    "isFavorite": null
+  },
+  {
+    "id": 262,
+    "word": "Pututo",
+    "definition": "Guiso de harina de maíz con carne.",
+    "isFavorite": null
+  },
+  {
+    "id": 263,
+    "word": "Quiboro",
+    "definition": "Canasto hecho de hojas de motacú, semiaplastado, circular y sin asa.",
+    "isFavorite": null
+  },
+  {
+    "id": 264,
+    "word": "Quichote",
+    "definition": "Raíz central, larga y fuerte de los árboles.",
+    "isFavorite": null
+  },
+  {
+    "id": 265,
+    "word": "Quirichí",
+    "definition": "Verruga.",
+    "isFavorite": null
+  },
+  {
+    "id": 266,
+    "word": "Quisa",
+    "definition": "Plátano maduro, asoleado.",
+    "isFavorite": null
+  },
+  {
+    "id": 267,
+    "word": "Quitabusi",
+    "definition": "Mosca tornasolada de tamaño considerable.",
+    "isFavorite": null
+  },
+  {
+    "id": 268,
+    "word": "Rocorroco",
+    "definition": "Insecto hematófago.",
+    "isFavorite": null
+  },
+  {
+    "id": 269,
+    "word": "Rosca",
+    "definition": "Masa horneada de maíz con queso en forma de argolla.",
+    "isFavorite": null
+  },
+  {
+    "id": 270,
+    "word": "Sabandija",
+    "definition": "Manga de insectos, mosquitos, ejenes, marigüises.",
+    "isFavorite": null
+  },
+  {
+    "id": 271,
+    "word": "Safacoca",
+    "definition": "Persona desaforada.",
+    "isFavorite": null
+  },
+  {
+    "id": 272,
+    "word": "Sama",
+    "definition": "Araña.",
+    "isFavorite": null
+  },
+  {
+    "id": 273,
+    "word": "Saó",
+    "definition": "Sombrero hecho de fibras de la palmera del mismo nombre.",
+    "isFavorite": null
+  },
+  {
+    "id": 274,
+    "word": "Sapirá",
+    "definition": "Lagañoso.",
+    "isFavorite": null
+  },
+  {
+    "id": 275,
+    "word": "Sapocó",
+    "definition": "De sapo.",
+    "isFavorite": null
+  },
+  {
+    "id": 276,
+    "word": "Sarao",
+    "definition": "Danza típica.",
+    "isFavorite": null
+  },
+  {
+    "id": 277,
+    "word": "Sarasaó",
+    "definition": "Color azul que resalta en la yuca maleada.",
+    "isFavorite": null
+  },
+  {
+    "id": 278,
+    "word": "Saró",
+    "definition": "Dícese de la epidermis escamosa por efecto de la sequedad del ambiente.",
+    "isFavorite": null
+  },
+  {
+    "id": 279,
+    "word": "Sarobabó",
+    "definition": "Se dice al que está decepcionado, por su miedo o tristeza disimulados.",
+    "isFavorite": null
+  },
+  {
+    "id": 280,
+    "word": "Sarobaró",
+    "definition": "Aparato de palo para acompañar dos hilos que tratan de torcer.",
+    "isFavorite": null
+  },
+  {
+    "id": 281,
+    "word": "Sayubú",
+    "definition": "Variedad de pájaro.",
+    "isFavorite": null
+  },
+  {
+    "id": 282,
+    "word": "Seboí",
+    "definition": "Variedad de pájaro de color negro.",
+    "isFavorite": null
+  },
+  {
+    "id": 283,
+    "word": "Sepe",
+    "definition": "Hormiga parecida al setochi pero más grande y muy voraz.",
+    "isFavorite": null
+  },
+  {
+    "id": 284,
+    "word": "Seraquití",
+    "definition": "Cera pegajosa.",
+    "isFavorite": null
+  },
+  {
+    "id": 285,
+    "word": "Serebó",
+    "definition": "Meloso.",
+    "isFavorite": null
+  },
+  {
+    "id": 286,
+    "word": "Serere",
+    "definition": "Variedad de pájaro.",
+    "isFavorite": null
+  },
+  {
+    "id": 287,
+    "word": "Sernambí",
+    "definition": "Goma recogida de la corteza de la siringa llena de impurezas.",
+    "isFavorite": null
+  },
+  {
+    "id": 288,
+    "word": "Sicurí",
+    "definition": "Boa (Boa contrictor).",
+    "isFavorite": null
+  },
+  {
+    "id": 289,
+    "word": "Silbaco",
+    "definition": "Duende.",
+    "isFavorite": null
+  },
+  {
+    "id": 290,
+    "word": "Simiusi",
+    "definition": "Persona delgada y pequeña de estatura. Débil.",
+    "isFavorite": null
+  },
+  {
+    "id": 291,
+    "word": "Singa",
+    "definition": "Vara larga para impulsar embarcaciones.",
+    "isFavorite": null
+  },
+  {
+    "id": 292,
+    "word": "Sirari",
+    "definition": "Ofidio.",
+    "isFavorite": null
+  },
+  {
+    "id": 293,
+    "word": "Sirionó",
+    "definition": "Indígena salvaje y belicoso de las selvas de Santa Cruz.",
+    "isFavorite": null
+  },
+  {
+    "id": 294,
+    "word": "Siripa",
+    "definition": "Mujer habladora sin miramiento.",
+    "isFavorite": null
+  },
+  {
+    "id": 295,
+    "word": "Siripi",
+    "definition": "Lo que queda en el urupé, después de colar la chicha.",
+    "isFavorite": null
+  },
+  {
+    "id": 296,
+    "word": "Somó",
+    "definition": "Chicha con mote de maíz.",
+    "isFavorite": null
+  },
+  {
+    "id": 297,
+    "word": "Soqui-son-fon",
+    "definition": "Se dice del animal que por haber corrido mucho, se le afloja el esfínter anal, dando paso al aire en calidad de fuelle.",
+    "isFavorite": null
+  },
+  {
+    "id": 298,
+    "word": "Suasar",
+    "definition": "Poner la yuca entre las brasas o llamas, para después pelarlas y azarlas.",
+    "isFavorite": null
+  },
+  {
+    "id": 299,
+    "word": "Sucha",
+    "definition": "Gallinazo, buitre.",
+    "isFavorite": null
+  },
+  {
+    "id": 300,
+    "word": "Suchi",
+    "definition": "Conscripto, soldado recluta.",
+    "isFavorite": null
+  },
+  {
+    "id": 301,
+    "word": "Sucumbé",
+    "definition": "Bebida compuesta de leche, huevo, licor y canela.",
+    "isFavorite": null
+  },
+  {
+    "id": 302,
+    "word": "Sumaqui",
+    "definition": "Corteza curtiente que se extrae del árbol llamado curupaú.",
+    "isFavorite": null
+  },
+  {
+    "id": 303,
+    "word": "Sumurucucu",
+    "definition": "Ave nocturna.",
+    "isFavorite": null
+  },
+  {
+    "id": 304,
+    "word": "Suniacá",
+    "definition": "Comida de maíz.",
+    "isFavorite": null
+  },
+  {
+    "id": 305,
+    "word": "Supumó",
+    "definition": "Fieros que se hacen a una persona, haciendo ver que está mejor con otra.",
+    "isFavorite": null
+  },
+  {
+    "id": 306,
+    "word": "Suraso",
+    "definition": "Viento fuerte y frío del sur.",
+    "isFavorite": null
+  },
+  {
+    "id": 307,
+    "word": "Surubí",
+    "definition": "Pez de la familia de los Gádidos.",
+    "isFavorite": null
+  },
+  {
+    "id": 308,
+    "word": "Tababé",
+    "definition": "De formas torcidas.",
+    "isFavorite": null
+  },
+  {
+    "id": 309,
+    "word": "Table",
+    "definition": "En el juego de las bolas.",
+    "isFavorite": null
+  },
+  {
+    "id": 310,
+    "word": "Tachobobó",
+    "definition": "Una cosa que no es dura ni blanda.",
+    "isFavorite": null
+  },
+  {
+    "id": 311,
+    "word": "Tacú",
+    "definition": "Mortero de madera.",
+    "isFavorite": null
+  },
+  {
+    "id": 312,
+    "word": "Tacuarilla",
+    "definition": "Arma primitiva a guisa de escopeta de un solo cañón.",
+    "isFavorite": null
+  },
+  {
+    "id": 313,
+    "word": "Tacuchiri",
+    "definition": "Persona con defectos en el nudo de la pierna. \"Taculiqui\".",
+    "isFavorite": null
+  },
+  {
+    "id": 314,
+    "word": "Tacupé",
+    "definition": "Polvo de tiesto que sirve para amalgamar el barro de loza.",
+    "isFavorite": null
+  },
+  {
+    "id": 315,
+    "word": "Taitetú",
+    "definition": "Puerco pequeño del monte.",
+    "isFavorite": null
+  },
+  {
+    "id": 316,
+    "word": "Tajunó",
+    "definition": "Amanecido de mala cara.",
+    "isFavorite": null
+  },
+  {
+    "id": 317,
+    "word": "Tapeque",
+    "definition": "Vitualla, avío.",
+    "isFavorite": null
+  },
+  {
+    "id": 318,
+    "word": "Tapiosí",
+    "definition": "Insecto nocturno que da luz instantánea.",
+    "isFavorite": null
+  },
+  {
+    "id": 319,
+    "word": "Tapití",
+    "definition": "Liebre.",
+    "isFavorite": null
+  },
+  {
+    "id": 320,
+    "word": "Tapora",
+    "definition": "Mujer crespa, de cabello ensortijado.",
+    "isFavorite": null
+  },
+  {
+    "id": 321,
+    "word": "Taquirari",
+    "definition": "Música típica de Santa Cruz.",
+    "isFavorite": null
+  },
+  {
+    "id": 322,
+    "word": "Tarabilla",
+    "definition": "Dispositivo en el aparato que sirve para hacer cabestros.",
+    "isFavorite": null
+  },
+  {
+    "id": 323,
+    "word": "Taracoé",
+    "definition": "Ave del orden de las Zancudas.",
+    "isFavorite": null
+  },
+  {
+    "id": 324,
+    "word": "Tarechi",
+    "definition": "Loro salvaje, de canto muy ruidoso, que nunca llega a hablar, aunque se crie en cautiverio.",
+    "isFavorite": null
+  },
+  {
+    "id": 325,
+    "word": "Tari",
+    "definition": "Vasija hecha de tutuma con orificio angosto para echar líquidos.",
+    "isFavorite": null
+  },
+  {
+    "id": 326,
+    "word": "Tataracó",
+    "definition": "Demasiado cuchuqui.",
+    "isFavorite": null
+  },
+  {
+    "id": 327,
+    "word": "Tatú",
+    "definition": "Armadillo.",
+    "isFavorite": null
+  },
+  {
+    "id": 328,
+    "word": "Tembleque",
+    "definition": "Persona que sufre del mal de Parkinson.",
+    "isFavorite": null
+  },
+  {
+    "id": 329,
+    "word": "Tibibi",
+    "definition": "Ave pequeña del orden de las Zancudas.",
+    "isFavorite": null
+  },
+  {
+    "id": 330,
+    "word": "Tichela",
+    "definition": "Vaso de hojalata en que se recibe el látex de la goma.",
+    "isFavorite": null
+  },
+  {
+    "id": 331,
+    "word": "Tichibó",
+    "definition": "Vasija, con dos orejas, hecha de barro cocido. Se utiliza generalmente para echar chicha.",
+    "isFavorite": null
+  },
+  {
+    "id": 332,
+    "word": "Tijereta",
+    "definition": "Ave de la familia tyrannidae, cuya cola es bifurcada.",
+    "isFavorite": null
+  },
+  {
+    "id": 333,
+    "word": "Tilburí",
+    "definition": "Coche de dos ruedas tirado por un caballo, usado antiguamente en la ciudad de Santa Cruz de la Sierra.",
+    "isFavorite": null
+  },
+  {
+    "id": 334,
+    "word": "Tiluchi",
+    "definition": "Hornero.",
+    "isFavorite": null
+  },
+  {
+    "id": 335,
+    "word": "Tipoi",
+    "definition": "Vestimenta exterior de uso femenino en tela delgada; la llevan las cuñas.",
+    "isFavorite": null
+  },
+  {
+    "id": 336,
+    "word": "Tiquiminiqui",
+    "definition": "Se emplea cuando se advierte un engaño; quiere decir: \"te pelaste\".",
+    "isFavorite": null
+  },
+  {
+    "id": 337,
+    "word": "Tirirú",
+    "definition": "Vacín de tutuma partida por la mitad.",
+    "isFavorite": null
+  },
+  {
+    "id": 338,
+    "word": "Toco",
+    "definition": "Trozo de madera para sentarse.",
+    "isFavorite": null
+  },
+  {
+    "id": 339,
+    "word": "Tolón",
+    "definition": "Se dice a la persona de poco talento. Simple.",
+    "isFavorite": null
+  },
+  {
+    "id": 340,
+    "word": "Tolondro",
+    "definition": "Hombre de poco talento.",
+    "isFavorite": null
+  },
+  {
+    "id": 341,
+    "word": "Toruno",
+    "definition": "Toro que ha sido castrado en viejo.",
+    "isFavorite": null
+  },
+  {
+    "id": 342,
+    "word": "Trasao",
+    "definition": "Machete.",
+    "isFavorite": null
+  },
+  {
+    "id": 343,
+    "word": "Trompeta",
+    "definition": "Persona enojada o \"empacada\".",
+    "isFavorite": null
+  },
+  {
+    "id": 344,
+    "word": "Tucura",
+    "definition": "Insecto de la familia de las langostas, al que también se le llama \"visita\".",
+    "isFavorite": null
+  },
+  {
+    "id": 345,
+    "word": "Tui",
+    "definition": "Ave de la familia de los rapaces.",
+    "isFavorite": null
+  },
+  {
+    "id": 346,
+    "word": "Tujuré",
+    "definition": "Alimento de maíz, pelado con lejía.",
+    "isFavorite": null
+  },
+  {
+    "id": 347,
+    "word": "Turiro",
+    "definition": "Insecto que destruye la madera reduciéndola a polvo. Termita.",
+    "isFavorite": null
+  },
+  {
+    "id": 348,
+    "word": "Turumba",
+    "definition": "Aturdido.",
+    "isFavorite": null
+  },
+  {
+    "id": 349,
+    "word": "Turupé",
+    "definition": "Lo que tiene muchos agujeros.",
+    "isFavorite": null
+  },
+  {
+    "id": 350,
+    "word": "Turuteadora",
+    "definition": "Arrulladora.",
+    "isFavorite": null
+  },
+  {
+    "id": 351,
+    "word": "Tutuma",
+    "definition": "Calabaza que sirve como recipiente para muchos usos. Fruto del tutumo.",
+    "isFavorite": null
+  },
+  {
+    "id": 352,
+    "word": "Tuyuyo",
+    "definition": "Ombligo largo, brotado.",
+    "isFavorite": null
+  },
+  {
+    "id": 353,
+    "word": "Urina",
+    "definition": "Gacela.",
+    "isFavorite": null
+  },
+  {
+    "id": 354,
+    "word": "Urupé",
+    "definition": "Cedazo o tamiz de fibras de saó.",
+    "isFavorite": null
+  },
+  {
+    "id": 355,
+    "word": "Urupeza",
+    "definition": "Cedazo parecido al urupé pero de tejido más ralo.",
+    "isFavorite": null
+  },
+  {
+    "id": 356,
+    "word": "Ururó",
+    "definition": "Mono pequeño de color amarillo.",
+    "isFavorite": null
+  },
+  {
+    "id": 357,
+    "word": "Urutaú",
+    "definition": "Ave nocturna de canto lúgubre.",
+    "isFavorite": null
+  },
+  {
+    "id": 358,
+    "word": "Usa",
+    "definition": "Buey del lado izquierdo del carretón. Voz de mando para que avance.",
+    "isFavorite": null
+  },
+  {
+    "id": 359,
+    "word": "Viudita",
+    "definition": "Personaje de ultratumba, representado por una mujer vestida de negro con mantón blanco, cuyo cuerpo está relleno con chala.",
+    "isFavorite": null
+  },
+  {
+    "id": 360,
+    "word": "Yacaré",
+    "definition": "Caimán.",
+    "isFavorite": null
+  },
+  {
+    "id": 361,
+    "word": "Yapar",
+    "definition": "Añadidura",
+    "isFavorite": null
+  },
+  {
+    "id": 362,
+    "word": "Yarame",
+    "definition": "Piedra roja blanda.",
+    "isFavorite": null
+  },
+  {
+    "id": 363,
+    "word": "Yesca",
+    "definition": "Sin dinero.",
+    "isFavorite": null
+  },
+  {
+    "id": 364,
+    "word": "Yeta",
+    "definition": "Mala suerte.",
+    "isFavorite": null
+  },
+  {
+    "id": 365,
+    "word": "Yomomo",
+    "definition": "Fango.",
+    "isFavorite": null
+  },
+  {
+    "id": 366,
+    "word": "Yoperojobobo",
+    "definition": "Variedad de víbora muy venenosa.",
+    "isFavorite": null
+  },
+  {
+    "id": 368,
+    "word": "Zarandajo",
+    "definition": "Dícese de la persona chistosa y juguetona.",
+    "isFavorite": null
+  },
+  {
+    "id": 369,
+    "word": "Zocollón",
+    "definition": "Acción de empujar bruscamente del cuello a otra persona.",
+    "isFavorite": null
+  }
+]
