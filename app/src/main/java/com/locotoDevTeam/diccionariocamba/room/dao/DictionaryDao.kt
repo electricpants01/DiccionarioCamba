@@ -1,6 +1,5 @@
 package com.locotoDevTeam.diccionariocamba.room.dao
 
-import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
@@ -9,6 +8,9 @@ import com.locotoDevTeam.diccionariocamba.model.Dictionary
 
 @Dao
 interface DictionaryDao {
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun upsertAll(dictionaryList: List<Dictionary>)
 
     @Query("SELECT * FROM dictionary")
     fun getAll(): List<Dictionary>
