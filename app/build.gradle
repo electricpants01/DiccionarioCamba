@@ -54,8 +54,12 @@ dependencies {
     // circle image view
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     // room
-    implementation "androidx.room:room-runtime:2.4.2"
-    kapt "androidx.room:room-compiler:2.4.2"
+    implementation "androidx.room:room-runtime:2.6.1"
+    kapt "androidx.room:room-compiler:2.6.1"
     // lottie
     implementation 'com.airbnb.android:lottie:5.0.3'
+    // work manager
+    implementation "androidx.work:work-runtime-ktx:2.9.0"
+    // google gson
+    implementation 'com.google.code.gson:gson:2.11.0'
 }

@@ -3,7 +3,6 @@ package com.locotoDevTeam.diccionariocamba.view.mainFragment
 import android.content.Context
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.room.dao.AppDatabase
 import kotlinx.coroutines.CoroutineScope

@@ -1,7 +1,6 @@
 package com.locotoDevTeam.diccionariocamba.view.detail
 
 import android.content.DialogInterface
-import android.graphics.ColorFilter
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
