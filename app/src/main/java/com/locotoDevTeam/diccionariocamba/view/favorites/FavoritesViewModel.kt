@@ -5,19 +5,24 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.room.dao.AppDatabase
+import com.locotoDevTeam.diccionariocamba.room.dao.DictionaryDao
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class FavoritesViewModel: ViewModel() {
+@HiltViewModel
+class FavoritesViewModel @Inject constructor(
+    private val dictionaryDao: DictionaryDao,
+): ViewModel() {
 
     val favoriteList = MutableLiveData<List<Dictionary>>()
 
 
-    fun getAllFavorites(context: Context){
+    fun getAllFavorites(){
         CoroutineScope(Dispatchers.IO).launch {
-            val room = AppDatabase.getInstance(context)
-            favoriteList.postValue(room.dictionaryDao().getFavorites())
+            favoriteList.postValue(dictionaryDao.getFavorites())
         }
     }
 

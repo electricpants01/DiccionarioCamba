@@ -6,7 +6,9 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.locotoDevTeam.diccionariocamba.R
 import com.locotoDevTeam.diccionariocamba.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     lateinit var mainBinding: ActivityMainBinding

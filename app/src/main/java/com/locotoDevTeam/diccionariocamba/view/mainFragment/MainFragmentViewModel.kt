@@ -5,36 +5,32 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.room.dao.AppDatabase
+import com.locotoDevTeam.diccionariocamba.room.dao.DictionaryDao
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class MainFragmentViewModel: ViewModel() {
+@HiltViewModel
+class MainFragmentViewModel @Inject constructor(
+    private val dictionaryDao: DictionaryDao,
+): ViewModel() {
 
     var dictionaryList = MutableLiveData<List<Dictionary>>()
 
-
-    fun insertDictionary(dictionaryList: List<Dictionary>, context: Context) {
+    fun getAllDictionaries() {
         CoroutineScope(Dispatchers.IO).launch {
-            val room = AppDatabase.getInstance(context)
-            for (dictionary in dictionaryList) {
-                room.dictionaryDao().insert(dictionary)
+            dictionaryDao.getAll().collectLatest {
+                dictionaryList.postValue(it)
             }
-            getAllDictionaries(context)
         }
     }
 
-    fun getAllDictionaries(context: Context) {
+    fun searchInDictionary(word: String){
         CoroutineScope(Dispatchers.IO).launch {
-            val room = AppDatabase.getInstance(context)
-            dictionaryList.postValue(room.dictionaryDao().getAll())
-        }
-    }
-
-    fun searchInDictionary(word: String, context: Context){
-        CoroutineScope(Dispatchers.IO).launch {
-            val room = AppDatabase.getInstance(context)
-            dictionaryList.postValue(room.dictionaryDao().search(word))
+            dictionaryList.postValue(dictionaryDao.search(word))
         }
     }
 

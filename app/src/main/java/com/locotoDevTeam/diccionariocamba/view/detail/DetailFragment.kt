@@ -12,11 +12,13 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.locotoDevTeam.diccionariocamba.R
 import com.locotoDevTeam.diccionariocamba.databinding.FragmentDetailBinding
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
+import dagger.hilt.android.AndroidEntryPoint
 
 interface DetailFragmentListener {
     fun onDetailFragmentDismissed()
 }
 
+@AndroidEntryPoint
 class DetailFragment(private var detailListener: DetailFragmentListener) : BottomSheetDialogFragment() {
 
     lateinit var binding: FragmentDetailBinding
@@ -60,7 +62,7 @@ class DetailFragment(private var detailListener: DetailFragmentListener) : Botto
         viewModel.isFavorite.postValue(dictionary.isFavorite)
         binding.ivFavorite.setOnClickListener {
             dictionary.isFavorite = !dictionary.isFavorite
-            viewModel.updateFavorites(dictionary.id, dictionary.isFavorite, requireContext())
+            viewModel.updateFavorites(dictionary.id, dictionary.isFavorite)
         }
     }
 

@@ -9,8 +9,9 @@ import androidx.fragment.app.viewModels
 import com.locotoDevTeam.diccionariocamba.R
 import com.locotoDevTeam.diccionariocamba.adapter.ItemKolodaAdapter
 import com.locotoDevTeam.diccionariocamba.databinding.FragmentSlideBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class SlideFragment : Fragment() {
 
     lateinit var sliderBinding: FragmentSlideBinding
@@ -28,7 +29,7 @@ class SlideFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initRecycler()
-        viewmodel.getAllDictionaries(requireContext())
+        viewmodel.getAllDictionaries()
         initSubscribers()
     }
 

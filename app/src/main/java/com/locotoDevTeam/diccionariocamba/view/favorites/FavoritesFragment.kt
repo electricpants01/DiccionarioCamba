@@ -13,7 +13,9 @@ import com.locotoDevTeam.diccionariocamba.databinding.FragmentFavoritesBinding
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.view.detail.DetailFragment
 import com.locotoDevTeam.diccionariocamba.view.detail.DetailFragmentListener
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class FavoritesFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener, DetailFragmentListener {
 
     lateinit var binding: FragmentFavoritesBinding
@@ -31,7 +33,7 @@ class FavoritesFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener,
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewmodel.getAllFavorites(requireContext())
+        viewmodel.getAllFavorites()
         initRecyclerView()
         initSubscriptions()
     }
@@ -43,7 +45,7 @@ class FavoritesFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener,
     }
 
     override fun onDetailFragmentDismissed() {
-        viewmodel.getAllFavorites(requireContext())
+        viewmodel.getAllFavorites()
     }
 
     override fun onItemClick(item: Dictionary) {

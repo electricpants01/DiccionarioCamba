@@ -11,7 +11,7 @@ import androidx.work.workDataOf
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.worker.SeedDatabaseWorker
 
-@Database(entities = [Dictionary::class], version = 1)
+@Database(entities = [Dictionary::class], version = 1, exportSchema = false)
 abstract class AppDatabase(): RoomDatabase() {
 
     companion object {
