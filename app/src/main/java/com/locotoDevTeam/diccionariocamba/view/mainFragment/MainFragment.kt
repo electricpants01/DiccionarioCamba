@@ -14,6 +14,7 @@ import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.view.detail.DetailFragment
 import com.locotoDevTeam.diccionariocamba.view.detail.DetailFragmentListener
 
+
 class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener, DetailFragmentListener {
 
     lateinit var binding: FragmentMainBinding
@@ -36,7 +37,7 @@ class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener, Deta
         initSearchView()
         initSubscriptions()
         //
-        viewmodel.getAllDictionaries(requireContext())
+        viewmodel.getAllDictionaries()
     }
 
     private fun initSearchView(){
@@ -51,7 +52,7 @@ class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener, Deta
             }
 
             override fun onQueryTextChange(newText: String?): Boolean {
-                viewmodel.searchInDictionary(newText!!, requireContext())
+                viewmodel.searchInDictionary(newText!!)
                 return false
             }
         })

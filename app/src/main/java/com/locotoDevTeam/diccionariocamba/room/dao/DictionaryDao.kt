@@ -5,6 +5,7 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface DictionaryDao {
@@ -13,7 +14,7 @@ interface DictionaryDao {
     fun upsertAll(dictionaryList: List<Dictionary>)
 
     @Query("SELECT * FROM dictionary")
-    fun getAll(): List<Dictionary>
+    fun getAll(): Flow<List<Dictionary>>
 
     @Query("SELECT * FROM dictionary WHERE dictionary.word like '%' || :word || '%'")
     fun search(word: String): List<Dictionary>
