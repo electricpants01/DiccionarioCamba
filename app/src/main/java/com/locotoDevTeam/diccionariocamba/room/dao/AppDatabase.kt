@@ -12,7 +12,7 @@ import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.worker.SeedDatabaseWorker
 import com.locotoDevTeam.diccionariocamba.worker.SyncDatabaseWorker
 
-@Database(entities = [Dictionary::class], version = 1, exportSchema = true)
+@Database(entities = [Dictionary::class], version = 1, exportSchema = false)
 abstract class AppDatabase(): RoomDatabase() {
 
     companion object {

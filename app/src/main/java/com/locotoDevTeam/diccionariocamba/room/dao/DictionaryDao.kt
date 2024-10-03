@@ -31,4 +31,7 @@ interface DictionaryDao {
 
     @Update
     suspend fun update(dictionary: Dictionary)
+
+    @Query("SELECT * FROM dictionary ORDER BY RANDOM() LIMIT 1")
+    suspend fun getRandomWord(): Dictionary?
 }
