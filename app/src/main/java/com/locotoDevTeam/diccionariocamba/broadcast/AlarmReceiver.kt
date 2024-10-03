@@ -78,7 +78,7 @@ class AlarmReceiver : BroadcastReceiver() {
         }
 
         val notification = NotificationCompat.Builder(context, channelId)
-            .setSmallIcon(R.mipmap.ic_launcher)
+            .setSmallIcon(R.drawable.diccionario_camba)
             .setContentTitle("Palabra del día")
             .setContentText(content)
             .setStyle(

@@ -16,8 +16,8 @@ class AlarmSchedulerImpl(
         // Set the time to 8:00 AM
         val calendar = Calendar.getInstance().apply {
             timeInMillis = System.currentTimeMillis()
-            set(Calendar.HOUR_OF_DAY, 1)
-            set(Calendar.MINUTE, 40)
+            set(Calendar.HOUR_OF_DAY, 8)
+            set(Calendar.MINUTE, 0)
             set(Calendar.SECOND, 0)
         }
 
