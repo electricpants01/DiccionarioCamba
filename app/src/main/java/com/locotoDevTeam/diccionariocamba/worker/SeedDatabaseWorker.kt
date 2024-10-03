@@ -15,7 +15,7 @@ import kotlinx.coroutines.withContext
 class SeedDatabaseWorker(
     context: Context,
     workerParams: WorkerParameters,
-) : CoroutineWorker(context, workerParams){
+) : CoroutineWorker(context, workerParams) {
     override suspend fun doWork(): Result = withContext(Dispatchers.IO) {
         try {
             val filename = inputData.getString(KEY_FILENAME)
@@ -23,7 +23,8 @@ class SeedDatabaseWorker(
                 applicationContext.assets.open(filename).use { inputStream ->
                     JsonReader(inputStream.reader()).use { jsonReader ->
                         val dictionaryType = object : TypeToken<List<Dictionary>>() {}.type
-                        val dictionaryList : List<Dictionary> = Gson().fromJson(jsonReader, dictionaryType)
+                        val dictionaryList: List<Dictionary> =
+                            Gson().fromJson(jsonReader, dictionaryType)
 
                         val database = AppDatabase.getInstance(applicationContext)
                         database.dictionaryDao().upsertAll(dictionaryList)

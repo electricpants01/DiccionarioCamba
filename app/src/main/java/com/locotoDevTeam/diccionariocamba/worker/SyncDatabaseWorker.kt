@@ -31,7 +31,8 @@ class SyncDatabaseWorker(
                 applicationContext.assets.open(filename).use { inputStream ->
                     JsonReader(inputStream.reader()).use { jsonReader ->
                         val dictionaryType = object : TypeToken<List<Dictionary>>() {}.type
-                        val newWordList: List<Dictionary> = Gson().fromJson(jsonReader, dictionaryType)
+                        val newWordList: List<Dictionary> =
+                            Gson().fromJson(jsonReader, dictionaryType)
 
                         val database = AppDatabase.getInstance(applicationContext)
                         val dao = database.dictionaryDao()

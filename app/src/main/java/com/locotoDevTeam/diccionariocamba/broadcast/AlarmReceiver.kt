@@ -81,7 +81,9 @@ class AlarmReceiver : BroadcastReceiver() {
             .setSmallIcon(R.mipmap.ic_launcher)
             .setContentTitle("Palabra del día")
             .setContentText(content)
-            .setStyle(NotificationCompat.BigTextStyle().bigText(content)) // Para manejar texto largo
+            .setStyle(
+                NotificationCompat.BigTextStyle().bigText(content)
+            ) // Para manejar texto largo
             .setPriority(NotificationCompat.PRIORITY_HIGH)
             .setAutoCancel(true)
             .build()

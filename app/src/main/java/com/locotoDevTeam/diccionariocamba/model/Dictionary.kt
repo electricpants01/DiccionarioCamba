@@ -9,5 +9,6 @@ data class Dictionary(
     val id: Int,
     val word: String,
     val definition: String,
-    var isFavorite: Boolean = false) {
+    var isFavorite: Boolean = false
+) {
 }

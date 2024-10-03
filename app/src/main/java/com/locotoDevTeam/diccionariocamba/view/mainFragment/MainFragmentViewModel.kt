@@ -14,7 +14,7 @@ import javax.inject.Inject
 @HiltViewModel
 class MainFragmentViewModel @Inject constructor(
     private val dictionaryDao: DictionaryDao,
-): ViewModel() {
+) : ViewModel() {
 
     var dictionaryList = MutableLiveData<List<Dictionary>>()
 
@@ -26,7 +26,7 @@ class MainFragmentViewModel @Inject constructor(
         }
     }
 
-    fun searchInDictionary(word: String){
+    fun searchInDictionary(word: String) {
         CoroutineScope(Dispatchers.IO).launch {
             dictionaryList.postValue(dictionaryDao.search(word))
         }

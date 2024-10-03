@@ -14,7 +14,7 @@ import javax.inject.Inject
 @HiltViewModel
 class SlideViewModel @Inject constructor(
     private val dictionaryDao: DictionaryDao,
-): ViewModel() {
+) : ViewModel() {
 
     val dictionaryList = MutableLiveData<List<Dictionary>>()
 

@@ -21,7 +21,7 @@ class SlideFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val view =  inflater.inflate(R.layout.fragment_slide, container, false)
+        val view = inflater.inflate(R.layout.fragment_slide, container, false)
         sliderBinding = FragmentSlideBinding.bind(view)
         return sliderBinding.root
     }
@@ -33,12 +33,12 @@ class SlideFragment : Fragment() {
         initSubscribers()
     }
 
-    private fun initRecycler(){
+    private fun initRecycler() {
         val adapter = ItemKolodaAdapter(requireContext(), emptyList())
         sliderBinding.koloda.adapter = adapter
     }
 
-    private fun initSubscribers(){
+    private fun initSubscribers() {
         viewmodel.dictionaryList.observe(viewLifecycleOwner) { dictionaries ->
             val adapter = ItemKolodaAdapter(requireContext(), dictionaries.shuffled())
             sliderBinding.koloda.adapter = adapter

@@ -36,10 +36,15 @@ class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener, Deta
             // permission granted
             // Update the button state to hide it
             AlarmSchedulerImpl(requireContext()).schedule()
-            Toast.makeText(requireContext(), "Permisos de notificacion accedido", Toast.LENGTH_SHORT).show()
+            Toast.makeText(
+                requireContext(),
+                "Permisos de notificacion accedido",
+                Toast.LENGTH_SHORT
+            ).show()
         } else {
             // permission denied or forever denied
-            Toast.makeText(requireContext(), "Permiso de notificacion denegado", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "Permiso de notificacion denegado", Toast.LENGTH_SHORT)
+                .show()
         }
     }
 

@@ -16,7 +16,8 @@ import com.locotoDevTeam.diccionariocamba.view.detail.DetailFragmentListener
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class FavoritesFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener, DetailFragmentListener {
+class FavoritesFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener,
+    DetailFragmentListener {
 
     lateinit var binding: FragmentFavoritesBinding
     val viewmodel: FavoritesViewModel by viewModels()
@@ -38,9 +39,10 @@ class FavoritesFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener,
         initSubscriptions()
     }
 
-    private fun initRecyclerView(){
+    private fun initRecyclerView() {
         adapter = ItemDictionaryAdapter(this@FavoritesFragment, listOf())
-        binding.recyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+        binding.recyclerView.layoutManager =
+            LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
         binding.recyclerView.adapter = adapter
     }
 
@@ -55,12 +57,12 @@ class FavoritesFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener,
 
     }
 
-    private fun initSubscriptions(){
+    private fun initSubscriptions() {
         viewmodel.favoriteList.observe(viewLifecycleOwner) { favoriteList ->
-            if(favoriteList.isEmpty()){
+            if (favoriteList.isEmpty()) {
                 binding.lottieFavorites.visibility = View.VISIBLE
                 adapter.updateList(emptyList())
-            }else{
+            } else {
                 binding.lottieFavorites.visibility = View.GONE
                 adapter.updateList(favoriteList)
             }

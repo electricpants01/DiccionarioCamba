@@ -13,12 +13,12 @@ import javax.inject.Inject
 @HiltViewModel
 class FavoritesViewModel @Inject constructor(
     private val dictionaryDao: DictionaryDao,
-): ViewModel() {
+) : ViewModel() {
 
     val favoriteList = MutableLiveData<List<Dictionary>>()
 
 
-    fun getAllFavorites(){
+    fun getAllFavorites() {
         CoroutineScope(Dispatchers.IO).launch {
             favoriteList.postValue(dictionaryDao.getFavorites())
         }
