@@ -4,9 +4,10 @@ import android.content.Context
 
 class SharedPrefs(context: Context) {
 
-    val prefs = context.getSharedPreferences("com.locotoDevTeam.diccionariocamba", Context.MODE_PRIVATE)
+    val prefs =
+        context.getSharedPreferences("com.locotoDevTeam.diccionariocamba", Context.MODE_PRIVATE)
 
-    companion object{
+    companion object {
         const val FIRST_LOAD = "first_load"
     }
 

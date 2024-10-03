@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'com.google.dagger.hilt.android'
+    id 'com.google.devtools.ksp'
 }
 
 android {
@@ -11,7 +12,7 @@ android {
 
     defaultConfig {
         applicationId "com.locotoDevTeam.diccionariocamba"
-        minSdk 21
+        minSdk 23
         targetSdk 34
         versionCode 5
         versionName "1.4"
@@ -57,14 +58,14 @@ dependencies {
     // room
     implementation "androidx.room:room-runtime:2.6.1"
     implementation 'androidx.room:room-ktx:2.6.1'
-    kapt "androidx.room:room-compiler:2.6.1"
+    ksp "androidx.room:room-compiler:2.6.1"
     // lottie
     implementation 'com.airbnb.android:lottie:5.0.3'
     // work manager
-    implementation "androidx.work:work-runtime-ktx:2.9.0"
+    implementation "androidx.work:work-runtime-ktx:2.9.1"
     // google gson
     implementation 'com.google.code.gson:gson:2.11.0'
     // dagger hilt
-    implementation 'com.google.dagger:hilt-android:2.48'
-    kapt 'com.google.dagger:hilt-compiler:2.48'
+    implementation 'com.google.dagger:hilt-android:2.52'
+    kapt 'com.google.dagger:hilt-compiler:2.52'
 }

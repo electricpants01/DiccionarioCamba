@@ -11,10 +11,10 @@ import com.locotoDevTeam.diccionariocamba.databinding.ItemKolodaBinding
 import com.locotoDevTeam.diccionariocamba.model.DataSource
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
 
-class ItemKolodaAdapter(private val context: Context, private val dataSource: List<Dictionary>)
-    : BaseAdapter() {
+class ItemKolodaAdapter(private val context: Context, private val dataSource: List<Dictionary>) :
+    BaseAdapter() {
 
-    class ItemKolodaHolder(private val view: View): RecyclerView.ViewHolder(view) {
+    class ItemKolodaHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         val binding = ItemKolodaBinding.bind(view)
         val dataSourceImages = DataSource().loadImages()
 
@@ -36,7 +36,8 @@ class ItemKolodaAdapter(private val context: Context, private val dataSource: Li
     }
 
     override fun getView(position: Int, view: View?, parent: ViewGroup?): View {
-        val layoutInflater = LayoutInflater.from(parent!!.context).inflate(R.layout.item_koloda, parent, false)
+        val layoutInflater =
+            LayoutInflater.from(parent!!.context).inflate(R.layout.item_koloda, parent, false)
         val holder = ItemKolodaHolder(layoutInflater)
         holder.render(dataSource[position])
         return layoutInflater
