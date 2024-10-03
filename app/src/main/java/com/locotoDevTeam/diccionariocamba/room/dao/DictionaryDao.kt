@@ -4,6 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import androidx.room.Update
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import kotlinx.coroutines.flow.Flow
 
@@ -27,4 +28,7 @@ interface DictionaryDao {
 
     @Query("update dictionary set isFavorite = :isFavorite where id = :id")
     fun updateFavorite(id: Int, isFavorite: Boolean)
+
+    @Update
+    suspend fun update(dictionary: Dictionary)
 }

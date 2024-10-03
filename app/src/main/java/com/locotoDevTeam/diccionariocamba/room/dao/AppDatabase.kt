@@ -10,8 +10,9 @@ import androidx.work.WorkManager
 import androidx.work.workDataOf
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.worker.SeedDatabaseWorker
+import com.locotoDevTeam.diccionariocamba.worker.SyncDatabaseWorker
 
-@Database(entities = [Dictionary::class], version = 1, exportSchema = false)
+@Database(entities = [Dictionary::class], version = 1, exportSchema = true)
 abstract class AppDatabase(): RoomDatabase() {
 
     companion object {
@@ -36,6 +37,15 @@ abstract class AppDatabase(): RoomDatabase() {
                                 .build()
                             WorkManager.getInstance(context).enqueue(request)
                         }
+
+                        override fun onOpen(db: SupportSQLiteDatabase) {
+                            super.onOpen(db)
+                            // Verificación de datos nuevos en cada inicio
+                            val request = OneTimeWorkRequestBuilder<SyncDatabaseWorker>()
+                                .setInputData(workDataOf(SyncDatabaseWorker.KEY_FILENAME to SyncDatabaseWorker.CAMBA_DATA_FILENAME))
+                                .build()
+                            WorkManager.getInstance(context).enqueue(request)
+                        }
                     }
                 )
                 .build()
@@ -43,5 +53,4 @@ abstract class AppDatabase(): RoomDatabase() {
     }
 
     abstract fun dictionaryDao(): DictionaryDao
-
 }

@@ -40,7 +40,6 @@ class SlideFragment : Fragment() {
 
     private fun initSubscribers(){
         viewmodel.dictionaryList.observe(viewLifecycleOwner) { dictionaries ->
-            println("chris trajiste ${dictionaries.size} diccionarios")
             val adapter = ItemKolodaAdapter(requireContext(), dictionaries.shuffled())
             sliderBinding.koloda.adapter = adapter
         }

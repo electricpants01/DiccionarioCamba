@@ -14,7 +14,7 @@ import com.locotoDevTeam.diccionariocamba.databinding.FragmentDetailBinding
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import dagger.hilt.android.AndroidEntryPoint
 
-interface DetailFragmentListener {
+fun interface DetailFragmentListener {
     fun onDetailFragmentDismissed()
 }
 
@@ -45,7 +45,6 @@ class DetailFragment(private var detailListener: DetailFragmentListener) : Botto
     override fun onDismiss(dialog: DialogInterface) {
         super.onDismiss(dialog)
         detailListener.onDetailFragmentDismissed()
-        println("chris 1")
     }
 
     private fun initBottomSheetBehavior(){
