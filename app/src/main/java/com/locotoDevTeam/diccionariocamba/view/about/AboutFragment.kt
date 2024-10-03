@@ -29,7 +29,8 @@ class AboutFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         // open url = https://docs.google.com/forms/d/e/1FAIpQLSez3UYkmU4nKYl5mx1vi6fHZmLhYs6iELgGXnzV2jDwSN7ksQ/viewform?usp=sf_link
         aboutBinding.formImageView.setOnClickListener {
-            val url = "https://docs.google.com/forms/d/e/1FAIpQLSez3UYkmU4nKYl5mx1vi6fHZmLhYs6iELgGXnzV2jDwSN7ksQ/viewform?usp=sf_link"
+            val url =
+                "https://docs.google.com/forms/d/e/1FAIpQLSez3UYkmU4nKYl5mx1vi6fHZmLhYs6iELgGXnzV2jDwSN7ksQ/viewform?usp=sf_link"
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(url)
             startActivity(intent)

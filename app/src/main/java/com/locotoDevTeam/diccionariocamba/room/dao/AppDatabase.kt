@@ -10,14 +10,16 @@ import androidx.work.WorkManager
 import androidx.work.workDataOf
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.worker.SeedDatabaseWorker
+import com.locotoDevTeam.diccionariocamba.worker.SyncDatabaseWorker
 
 @Database(entities = [Dictionary::class], version = 1, exportSchema = false)
-abstract class AppDatabase(): RoomDatabase() {
+abstract class AppDatabase() : RoomDatabase() {
 
     companion object {
         private const val DATABASE_NAME = "diccionario-camba.db"
 
-        @Volatile private var instance: AppDatabase? = null
+        @Volatile
+        private var instance: AppDatabase? = null
 
         fun getInstance(context: Context): AppDatabase {
             return instance ?: synchronized(this) {
@@ -32,7 +34,16 @@ abstract class AppDatabase(): RoomDatabase() {
                         override fun onCreate(db: SupportSQLiteDatabase) {
                             super.onCreate(db)
                             val request = OneTimeWorkRequestBuilder<SeedDatabaseWorker>()
-                                .setInputData(workDataOf( SeedDatabaseWorker.KEY_FILENAME to SeedDatabaseWorker.CAMBA_DATA_FILENAME))
+                                .setInputData(workDataOf(SeedDatabaseWorker.KEY_FILENAME to SeedDatabaseWorker.CAMBA_DATA_FILENAME))
+                                .build()
+                            WorkManager.getInstance(context).enqueue(request)
+                        }
+
+                        override fun onOpen(db: SupportSQLiteDatabase) {
+                            super.onOpen(db)
+                            // Verificación de datos nuevos en cada inicio
+                            val request = OneTimeWorkRequestBuilder<SyncDatabaseWorker>()
+                                .setInputData(workDataOf(SyncDatabaseWorker.KEY_FILENAME to SyncDatabaseWorker.CAMBA_DATA_FILENAME))
                                 .build()
                             WorkManager.getInstance(context).enqueue(request)
                         }
@@ -43,5 +54,4 @@ abstract class AppDatabase(): RoomDatabase() {
     }
 
     abstract fun dictionaryDao(): DictionaryDao
-
 }
