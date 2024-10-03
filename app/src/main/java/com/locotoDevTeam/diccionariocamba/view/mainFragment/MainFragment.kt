@@ -20,7 +20,6 @@ import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.view.detail.DetailFragment
 import com.locotoDevTeam.diccionariocamba.view.detail.DetailFragmentListener
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener, DetailFragmentListener {
