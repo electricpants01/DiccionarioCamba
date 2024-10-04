@@ -1,51 +1,57 @@
 package com.locotoDevTeam.diccionariocamba.view.detail
 
-import android.content.DialogInterface
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.lifecycleScope
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.locotoDevTeam.diccionariocamba.R
 import com.locotoDevTeam.diccionariocamba.databinding.FragmentDetailBinding
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
+import com.locotoDevTeam.diccionariocamba.utils.viewBinding
 import dagger.hilt.android.AndroidEntryPoint
-
-fun interface DetailFragmentListener {
-    fun onDetailFragmentDismissed()
-}
+import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
-class DetailFragment(private var detailListener: DetailFragmentListener) :
-    BottomSheetDialogFragment() {
+class DetailFragment : BottomSheetDialogFragment() {
 
-    lateinit var binding: FragmentDetailBinding
     lateinit var dictionary: Dictionary
-    val viewModel: DetailViewModel by activityViewModels()
+    private val binding by viewBinding(FragmentDetailBinding::bind)
+    private val viewModel: DetailViewModel by activityViewModels()
 
+    companion object {
+        const val DICTIONARY_ID = "dictionaryId"
+
+        fun newInstance(dictionaryId: Int): DetailFragment {
+            return DetailFragment().apply {
+                arguments = bundleOf(DICTIONARY_ID to dictionaryId)
+            }
+        }
+    }
+
+    private val dictionaryId by lazy {
+        requireArguments().getInt(DICTIONARY_ID)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val view = inflater.inflate(R.layout.fragment_detail, container, false)
-        binding = FragmentDetailBinding.bind(view)
-        return binding.root
+        return inflater.inflate(R.layout.fragment_detail, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        viewModel.fetchDictionary(dictionaryId)
+        //
         initData()
         initBottomSheetBehavior()
-        initSubscriptions()
-    }
-
-    override fun onDismiss(dialog: DialogInterface) {
-        super.onDismiss(dialog)
-        detailListener.onDetailFragmentDismissed()
     }
 
     private fun initBottomSheetBehavior() {
@@ -58,26 +64,25 @@ class DetailFragment(private var detailListener: DetailFragmentListener) :
     }
 
     private fun initData() {
-        binding.txtTitle.text = dictionary.word
-        binding.txtDescription.text = dictionary.definition
-        viewModel.isFavorite.postValue(dictionary.isFavorite)
-        binding.ivFavorite.setOnClickListener {
-            dictionary.isFavorite = !dictionary.isFavorite
-            viewModel.updateFavorites(dictionary.id, dictionary.isFavorite)
-        }
-    }
-
-    private fun initSubscriptions() {
-        viewModel.isFavorite.observe(viewLifecycleOwner) { isFavorite ->
-            if (isFavorite) {
-                binding.ivFavorite.setImageResource(R.drawable.ic_baseline_star_24)
-                binding.ivFavorite.setColorFilter(requireContext().resources.getColor(R.color.yellow_color))
-            } else {
-                binding.ivFavorite.setImageResource(R.drawable.ic_baseline_star_border_24)
-                binding.ivFavorite.setColorFilter(requireContext().resources.getColor(R.color.black))
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewModel.uiState.collectLatest { uiState ->
+                uiState.dictionary?.let { dictionary ->
+                    with(binding) {
+                        txtTitle.text = dictionary.word
+                        txtDescription.text = dictionary.definition
+                        if (dictionary.isFavorite) {
+                            ivFavorite.setImageResource(R.drawable.ic_baseline_star_24)
+                            ivFavorite.setColorFilter(requireContext().resources.getColor(R.color.yellow_color))
+                        } else {
+                            ivFavorite.setImageResource(R.drawable.ic_baseline_star_border_24)
+                            ivFavorite.setColorFilter(requireContext().resources.getColor(R.color.black))
+                        }
+                        ivFavorite.setOnClickListener {
+                            viewModel.updateFavorites(dictionary.id, dictionary.isFavorite)
+                        }
+                    }
+                }
             }
         }
     }
-
-
 }
