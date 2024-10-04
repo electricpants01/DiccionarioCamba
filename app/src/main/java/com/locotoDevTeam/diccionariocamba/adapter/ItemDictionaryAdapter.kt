@@ -40,7 +40,6 @@ class ItemDictionaryAdapter(
         val item = datasource[position]
         holder.render(item)
         holder.binding.root.setOnClickListener {
-            println("chris item tapped")
             listener.onItemClick(item)
         }
     }

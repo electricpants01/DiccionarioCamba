@@ -32,7 +32,6 @@ class AlarmReceiver : BroadcastReceiver() {
     private fun retrieveRandomWordAndSendNotification(context: Context) {
         // Usamos una CoroutineScope para operar en el hilo IO y obtener los datos
         val job = CoroutineScope(Dispatchers.IO).launch {
-            println("chris entro al job")
             // Obtener una palabra aleatoria desde la base de datos
             val randomWord = dictionaryDao.getRandomWord()
 

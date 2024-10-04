@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -170,7 +171,6 @@ class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener {
     private fun initSubscriptions() {
         viewLifecycleOwner.lifecycleScope.launch {
             viewmodel.uiState.collectLatest {
-                println("chris entro a collect")
                 adapter.updateList(it.dictionaryList)
             }
         }

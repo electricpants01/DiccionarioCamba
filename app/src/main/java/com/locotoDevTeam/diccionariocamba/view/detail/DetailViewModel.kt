@@ -25,13 +25,11 @@ class DetailViewModel @Inject constructor(
     fun fetchDictionary(id: Int) {
         dictionaryDao.getById(id)
             .onEach { dictionary ->
-                println("chris entro")
                 _uiState.update { it.copy(dictionary = dictionary) }
             }.launchIn(viewModelScope)
     }
 
     fun updateFavorites(id: Int, isFavorite: Boolean) {
-        println("chris isfav $isFavorite")
         viewModelScope.launch(Dispatchers.IO) {
             dictionaryDao.updateFavorite(id, isFavorite)
         }

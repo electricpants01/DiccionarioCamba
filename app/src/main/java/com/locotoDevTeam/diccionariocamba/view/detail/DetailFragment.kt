@@ -78,7 +78,7 @@ class DetailFragment : BottomSheetDialogFragment() {
                             ivFavorite.setColorFilter(requireContext().resources.getColor(R.color.black))
                         }
                         ivFavorite.setOnClickListener {
-                            viewModel.updateFavorites(dictionary.id, dictionary.isFavorite)
+                            viewModel.updateFavorites(dictionary.id, !dictionary.isFavorite)
                         }
                     }
                 }
