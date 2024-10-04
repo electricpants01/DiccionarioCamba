@@ -1,20 +1,26 @@
 package com.locotoDevTeam.diccionariocamba.view.mainFragment
 
 import android.Manifest
+import android.app.AlarmManager
+import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
+import android.provider.Settings
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.locotoDevTeam.diccionariocamba.R
 import com.locotoDevTeam.diccionariocamba.adapter.ItemDictionaryAdapter
+import com.locotoDevTeam.diccionariocamba.broadcast.AlarmSchedulerImpl
 import com.locotoDevTeam.diccionariocamba.databinding.FragmentMainBinding
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.utils.viewBinding
@@ -42,18 +48,20 @@ class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener {
         }
     }
 
-//    // Launcher for the SCHEDULE_EXACT_ALARM permission request
-//    val alarmPermissionLauncher = registerForActivityResult(
-//        ActivityResultContracts.StartActivityForResult()
-//    ) { result ->
-//        if (result.resultCode == Activity.RESULT_OK) {
-//            // Permission was granted, schedule the alarm
-//            checkAndScheduleAlarm()
-//        } else {
-//            // Permission was denied
-//            Toast.makeText(requireContext(), "Permiso de alarma denegado", Toast.LENGTH_SHORT).show()
-//        }
-//    }
+    // Launcher for the SCHEDULE_EXACT_ALARM permission request
+    val alarmPermissionLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        // After returning from the settings, check if the permission is granted
+        val alarmManager = requireContext().getSystemService(Context.ALARM_SERVICE) as AlarmManager
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU && alarmManager.canScheduleExactAlarms()) {
+            // Permission was granted, schedule the alarm
+            checkAndScheduleAlarm()
+        } else {
+            // Permission was denied or not granted
+            Toast.makeText(requireContext(), "Permiso de alarma denegado", Toast.LENGTH_SHORT).show()
+        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -68,6 +76,9 @@ class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener {
         initSearchView()
         initSubscriptions()
         requestNotificationPermission()
+        if (shouldShowAlarmExactPermission()) {
+            showAlarmPermissionRationaleDialog()
+        }
     }
 
     private fun initSearchView() {
@@ -117,56 +128,45 @@ class MainFragment : Fragment(), ItemDictionaryAdapter.OnItemClickListener {
         }
     }
 
-//    private fun showAlarmPermissionRationaleDialog() {
-//        MaterialAlertDialogBuilder(requireContext())
-//            .setTitle("Permiso de Alarma Requerido")
-//            .setMessage("Este permiso es necesario para programar alarmas precisas. ¿Quieres otorgar el permiso?")
-//            .setPositiveButton("Sí") { dialog, which ->
-//                checkAndRequestExactAlarmPermission()
-//                dialog.dismiss()
-//            }
-//            .setNegativeButton("No") { dialog, which ->
-//                dialog.dismiss()
-//            }
-//            .show()
-//    }
-//
-//    private fun hasExactAlarmPermission(): Boolean {
-//        val alarmManager = requireContext().getSystemService(Context.ALARM_SERVICE) as AlarmManager
-//        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-//            alarmManager.canScheduleExactAlarms()
-//        } else {
-//            true // Older versions don't require this permission
-//        }
-//    }
-//
-//    // Method to check and request the exact alarm permission
-//    private fun checkAndRequestExactAlarmPermission() {
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-//            val alarmManager = requireContext().getSystemService(Context.ALARM_SERVICE) as AlarmManager
-//            if (!alarmManager.canScheduleExactAlarms()) {
-//                // Launch the settings to request the permission
-//                val intent = Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM)
-//                alarmPermissionLauncher.launch(intent)
-//            } else {
-//                // Permission already granted, schedule the alarm
-//                checkAndScheduleAlarm()
-//            }
-//        } else {
-//            // Older versions don't require this permission, schedule the alarm
-//            checkAndScheduleAlarm()
-//        }
-//    }
-//
-//    // Method to schedule the alarm (if permission is granted)
-//    private fun checkAndScheduleAlarm() {
-//        AlarmSchedulerImpl(requireContext()).schedule()
-//        Toast.makeText(
-//            requireContext(),
-//            "Alarma programada con éxito",
-//            Toast.LENGTH_SHORT
-//        ).show()
-//    }
+    private fun showAlarmPermissionRationaleDialog() {
+        MaterialAlertDialogBuilder(requireContext())
+            .setTitle("Permiso para enviar notificaciones")
+            .setMessage("Este permiso es necesario para tener la full experience de Diccionario Camba. ¿Quieres otorgar el permiso?")
+            .setPositiveButton("Sí") { dialog, which ->
+                checkAndRequestExactAlarmPermission()
+                dialog.dismiss()
+            }
+            .setNegativeButton("No") { dialog, which ->
+                dialog.dismiss()
+            }
+            .show()
+    }
+
+    private fun shouldShowAlarmExactPermission(): Boolean {
+        val alarmManager = requireContext().getSystemService(Context.ALARM_SERVICE) as AlarmManager
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            // Return false if the permission is granted, otherwise true
+            !alarmManager.canScheduleExactAlarms()
+        } else {
+            false // For older versions, assume permission is always granted
+        }
+    }
+
+    // Method to check and request the exact alarm permission
+    private fun checkAndRequestExactAlarmPermission() {
+        val intent = Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM)
+        alarmPermissionLauncher.launch(intent)
+    }
+
+    // Method to schedule the alarm (if permission is granted)
+    private fun checkAndScheduleAlarm() {
+        AlarmSchedulerImpl(requireContext()).schedule()
+        Toast.makeText(
+            requireContext(),
+            "Alarma programada con éxito",
+            Toast.LENGTH_SHORT
+        ).show()
+    }
 
     private fun initSubscriptions() {
         viewLifecycleOwner.lifecycleScope.launch {
