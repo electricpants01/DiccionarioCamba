@@ -10,7 +10,6 @@ import com.google.gson.stream.JsonReader
 import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.room.dao.AppDatabase
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.withContext
 
 class SyncDatabaseWorker(
@@ -41,18 +40,18 @@ class SyncDatabaseWorker(
                         val existingWords = dao.getAll()
 
                         // Sincronizar: Insertar nuevos y actualizar los existentes
-                        existingWords.collectLatest { myExistingWords ->
-                            newWordList.forEach { newWord ->
-                                val existingWord = myExistingWords.find { it.word == newWord.word }
-                                if (existingWord == null) {
-                                    // Inserta el nuevo dato si no existe
-                                    dao.insert(newWord)
-                                } else if (existingWord.definition != newWord.definition) {
-                                    // Actualiza si ha cambiado la definición
-                                    dao.update(newWord)
-                                }
+
+                        newWordList.forEach { newWord ->
+                            val existingWord = existingWords.find { it.word == newWord.word }
+                            if (existingWord == null) {
+                                // Inserta el nuevo dato si no existe
+                                dao.insert(newWord)
+                            } else if (existingWord.definition != newWord.definition) {
+                                // Actualiza si ha cambiado la definición
+                                dao.update(newWord)
                             }
                         }
+
 
                         Result.success()
                     }

@@ -13,12 +13,11 @@ class ItemDictionaryAdapter(
     private var datasource: List<Dictionary>
 ) : RecyclerView.Adapter<ItemDictionaryAdapter.DictionaryHolder>() {
 
-    interface OnItemClickListener {
+    fun interface OnItemClickListener {
         fun onItemClick(item: Dictionary)
     }
 
     fun updateList(myDatasource: List<Dictionary>) {
-        this.datasource = listOf()
         this.datasource = myDatasource
         notifyDataSetChanged()
     }
@@ -40,7 +39,7 @@ class ItemDictionaryAdapter(
     override fun onBindViewHolder(holder: DictionaryHolder, position: Int) {
         val item = datasource[position]
         holder.render(item)
-        holder.binding.myCardView.setOnClickListener {
+        holder.binding.root.setOnClickListener {
             listener.onItemClick(item)
         }
     }

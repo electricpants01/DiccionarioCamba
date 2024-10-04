@@ -9,21 +9,20 @@ import androidx.fragment.app.viewModels
 import com.locotoDevTeam.diccionariocamba.R
 import com.locotoDevTeam.diccionariocamba.adapter.ItemKolodaAdapter
 import com.locotoDevTeam.diccionariocamba.databinding.FragmentSlideBinding
+import com.locotoDevTeam.diccionariocamba.utils.viewBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class SlideFragment : Fragment() {
 
-    lateinit var sliderBinding: FragmentSlideBinding
+    private val binding by viewBinding(FragmentSlideBinding::bind)
     val viewmodel: SlideViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val view = inflater.inflate(R.layout.fragment_slide, container, false)
-        sliderBinding = FragmentSlideBinding.bind(view)
-        return sliderBinding.root
+        return inflater.inflate(R.layout.fragment_slide, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -35,13 +34,13 @@ class SlideFragment : Fragment() {
 
     private fun initRecycler() {
         val adapter = ItemKolodaAdapter(requireContext(), emptyList())
-        sliderBinding.koloda.adapter = adapter
+        binding.koloda.adapter = adapter
     }
 
     private fun initSubscribers() {
         viewmodel.dictionaryList.observe(viewLifecycleOwner) { dictionaries ->
             val adapter = ItemKolodaAdapter(requireContext(), dictionaries.shuffled())
-            sliderBinding.koloda.adapter = adapter
+            binding.koloda.adapter = adapter
         }
     }
 }

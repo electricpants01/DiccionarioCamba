@@ -14,8 +14,8 @@ android {
         applicationId "com.locotoDevTeam.diccionariocamba"
         minSdk 23
         targetSdk 34
-        versionCode 5
-        versionName "1.5"
+        versionCode 10
+        versionName "1.5.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
@@ -48,6 +48,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.5.0'
     implementation 'androidx.navigation:navigation-ui-ktx:2.5.0'
+    implementation 'androidx.databinding:databinding-runtime:8.7.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
@@ -68,4 +69,7 @@ dependencies {
     // dagger hilt
     implementation 'com.google.dagger:hilt-android:2.52'
     kapt 'com.google.dagger:hilt-compiler:2.52'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1'
+
 }

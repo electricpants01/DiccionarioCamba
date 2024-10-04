@@ -1,4 +1,4 @@
-package com.locotoDevTeam.diccionariocamba.util
+package com.locotoDevTeam.diccionariocamba.utils
 
 import android.content.Context
 
