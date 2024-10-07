@@ -24,5 +24,4 @@ object DatabaseModule {
     fun provideDictionaryDao(appDatabase: AppDatabase): DictionaryDao {
         return appDatabase.dictionaryDao()
     }
-
 }
