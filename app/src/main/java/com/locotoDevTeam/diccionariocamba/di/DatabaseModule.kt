@@ -1,12 +1,12 @@
 package com.locotoDevTeam.diccionariocamba.di
 
+import android.app.Application
 import android.content.Context
 import com.locotoDevTeam.diccionariocamba.room.dao.AppDatabase
 import com.locotoDevTeam.diccionariocamba.room.dao.DictionaryDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
@@ -14,9 +14,15 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object DatabaseModule {
 
+    @Provides
+    @Singleton
+    fun provideContext(application: Application): Context {
+        return application.applicationContext
+    }
+
     @Singleton
     @Provides
-    fun provideAppDatabase(@ApplicationContext context: Context): AppDatabase {
+    fun provideAppDatabase(context: Context): AppDatabase {
         return AppDatabase.getInstance(context)
     }
 
