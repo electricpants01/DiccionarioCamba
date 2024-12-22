@@ -22,9 +22,9 @@ import com.locotoDevTeam.diccionariocamba.R
 import com.locotoDevTeam.diccionariocamba.adapter.ItemDictionaryAdapter
 import com.locotoDevTeam.diccionariocamba.broadcast.AlarmSchedulerImpl
 import com.locotoDevTeam.diccionariocamba.databinding.FragmentMainBinding
-import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.utils.viewBinding
 import com.locotoDevTeam.diccionariocamba.view.detail.DetailFragment
+import com.locotoinnovations.core.model.Dictionary
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch

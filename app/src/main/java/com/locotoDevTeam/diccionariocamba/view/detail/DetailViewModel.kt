@@ -2,12 +2,13 @@ package com.locotoDevTeam.diccionariocamba.view.detail
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.room.dao.DictionaryDao
+import com.locotoinnovations.core.model.Dictionary
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.update
@@ -20,7 +21,7 @@ class DetailViewModel @Inject constructor(
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(DetailScreenUiState())
-    val uiState: Flow<DetailScreenUiState> = _uiState
+    val uiState: Flow<DetailScreenUiState> = _uiState.asStateFlow()
 
     fun fetchDictionary(id: Int) {
         dictionaryDao.getById(id)

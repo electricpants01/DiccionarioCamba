@@ -7,8 +7,8 @@ import androidx.work.WorkerParameters
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.google.gson.stream.JsonReader
-import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.room.dao.AppDatabase
+import com.locotoinnovations.core.model.Dictionary
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

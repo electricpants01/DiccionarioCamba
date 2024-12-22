@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.locotoDevTeam.diccionariocamba.R
 import com.locotoDevTeam.diccionariocamba.databinding.ItemKolodaBinding
 import com.locotoDevTeam.diccionariocamba.model.DataSource
-import com.locotoDevTeam.diccionariocamba.model.Dictionary
+import com.locotoinnovations.core.model.Dictionary
 
 class ItemKolodaAdapter(private val context: Context, private val dataSource: List<Dictionary>) :
     BaseAdapter() {

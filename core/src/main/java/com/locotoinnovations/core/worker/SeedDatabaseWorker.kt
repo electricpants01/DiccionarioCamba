@@ -6,9 +6,8 @@ import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.google.gson.stream.JsonReader
-import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.room.dao.AppDatabase
+import com.locotoinnovations.core.model.Dictionary
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
@@ -21,7 +20,7 @@ class SeedDatabaseWorker(
             val filename = inputData.getString(KEY_FILENAME)
             if (filename != null) {
                 applicationContext.assets.open(filename).use { inputStream ->
-                    JsonReader(inputStream.reader()).use { jsonReader ->
+                    com.google.gson.stream.JsonReader(inputStream.reader()).use { jsonReader ->
                         val dictionaryType = object : TypeToken<List<Dictionary>>() {}.type
                         val dictionaryList: List<Dictionary> =
                             Gson().fromJson(jsonReader, dictionaryType)
