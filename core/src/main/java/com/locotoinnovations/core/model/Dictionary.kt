@@ -1,4 +1,4 @@
-package com.locotoDevTeam.diccionariocamba.model
+package com.locotoinnovations.core.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
