@@ -8,9 +8,9 @@ import androidx.sqlite.db.SupportSQLiteDatabase
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
 import androidx.work.workDataOf
-import com.locotoDevTeam.diccionariocamba.model.Dictionary
 import com.locotoDevTeam.diccionariocamba.worker.SeedDatabaseWorker
 import com.locotoDevTeam.diccionariocamba.worker.SyncDatabaseWorker
+import com.locotoinnovations.core.model.Dictionary
 
 @Database(entities = [Dictionary::class], version = 1, exportSchema = false)
 abstract class AppDatabase() : RoomDatabase() {

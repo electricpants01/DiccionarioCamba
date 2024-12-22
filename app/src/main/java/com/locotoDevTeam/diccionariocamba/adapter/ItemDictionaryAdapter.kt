@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.locotoDevTeam.diccionariocamba.R
 import com.locotoDevTeam.diccionariocamba.databinding.DictionaryItemBinding
-import com.locotoDevTeam.diccionariocamba.model.Dictionary
+import com.locotoinnovations.core.model.Dictionary
 
 class ItemDictionaryAdapter(
     private val listener: OnItemClickListener,
