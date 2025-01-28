@@ -1,4 +1,4 @@
-package com.locotoDevTeam.diccionariocamba
+package com.locototeam.diccionariocamba
 
 import org.junit.Test
 

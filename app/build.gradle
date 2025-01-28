@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace 'com.locotoDevTeam.diccionariocamba'
+    namespace 'com.locototeam.diccionariocamba'
     compileSdk 35
 
     defaultConfig {
-        applicationId "com.locotoDevTeam.diccionariocamba"
+        applicationId "com.locototeam.diccionariocamba"
         minSdk 23
         targetSdk 35
         versionCode 11
