@@ -18,13 +18,13 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.locototeam.core.model.Dictionary
 import com.locototeam.diccionariocamba.R
 import com.locototeam.diccionariocamba.adapter.ItemDictionaryAdapter
 import com.locototeam.diccionariocamba.broadcast.AlarmSchedulerImpl
 import com.locototeam.diccionariocamba.databinding.FragmentMainBinding
 import com.locototeam.diccionariocamba.utils.viewBinding
 import com.locototeam.diccionariocamba.view.detail.DetailFragment
-import com.locototeam.core.model.Dictionary
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch

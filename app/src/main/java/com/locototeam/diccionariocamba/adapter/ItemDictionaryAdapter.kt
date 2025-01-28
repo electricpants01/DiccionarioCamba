@@ -4,9 +4,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.locototeam.core.model.Dictionary
 import com.locototeam.diccionariocamba.R
 import com.locototeam.diccionariocamba.databinding.DictionaryItemBinding
-import com.locototeam.core.model.Dictionary
 
 class ItemDictionaryAdapter(
     private val listener: OnItemClickListener,

@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.locototeam.core.model.Dictionary
 import com.locototeam.diccionariocamba.R
 import com.locototeam.diccionariocamba.databinding.ItemKolodaBinding
 import com.locototeam.diccionariocamba.model.DataSource
-import com.locototeam.core.model.Dictionary
 
 class ItemKolodaAdapter(private val context: Context, private val dataSource: List<Dictionary>) :
     BaseAdapter() {
