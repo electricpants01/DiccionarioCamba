@@ -9,7 +9,7 @@ import android.os.Build
 import android.util.Log
 import androidx.core.app.NotificationCompat
 import com.locototeam.diccionariocamba.R
-import com.locototeam.diccionariocamba.room.dao.DictionaryDao
+import com.locototeam.core.dao.DictionaryDao
 import com.locototeam.core.model.Dictionary
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope

@@ -1,4 +1,4 @@
-package com.locototeam.diccionariocamba.room.dao
+package com.locototeam.core.dao
 
 import androidx.room.Dao
 import androidx.room.Insert

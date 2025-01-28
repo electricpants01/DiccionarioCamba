@@ -3,7 +3,7 @@ package com.locototeam.diccionariocamba.view.slide
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.locototeam.diccionariocamba.room.dao.DictionaryDao
+import com.locototeam.core.dao.DictionaryDao
 import com.locototeam.core.model.Dictionary
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers

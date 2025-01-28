@@ -1,4 +1,4 @@
-package com.locotoinnovations.core
+package com.locototeam.core
 
 import org.junit.Test
 

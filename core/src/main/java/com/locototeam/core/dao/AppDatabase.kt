@@ -1,4 +1,4 @@
-package com.locototeam.diccionariocamba.room.dao
+package com.locototeam.core.dao
 
 import android.content.Context
 import androidx.room.Database
@@ -8,8 +8,8 @@ import androidx.sqlite.db.SupportSQLiteDatabase
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
 import androidx.work.workDataOf
-import com.locototeam.diccionariocamba.worker.SeedDatabaseWorker
-import com.locototeam.diccionariocamba.worker.SyncDatabaseWorker
+import com.locototeam.core.worker.SeedDatabaseWorker
+import com.locototeam.core.worker.SyncDatabaseWorker
 import com.locototeam.core.model.Dictionary
 
 @Database(entities = [Dictionary::class], version = 1, exportSchema = false)

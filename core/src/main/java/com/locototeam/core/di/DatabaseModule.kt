@@ -1,9 +1,9 @@
-package com.locototeam.diccionariocamba.di
+package com.locototeam.core.di
 
 import android.app.Application
 import android.content.Context
-import com.locototeam.diccionariocamba.room.dao.AppDatabase
-import com.locototeam.diccionariocamba.room.dao.DictionaryDao
+import com.locototeam.core.dao.AppDatabase
+import com.locototeam.core.dao.DictionaryDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

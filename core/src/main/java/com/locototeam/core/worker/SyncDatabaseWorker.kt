@@ -1,4 +1,4 @@
-package com.locototeam.diccionariocamba.worker
+package com.locototeam.core.worker
 
 import android.content.Context
 import android.util.Log
@@ -7,7 +7,7 @@ import androidx.work.WorkerParameters
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.google.gson.stream.JsonReader
-import com.locototeam.diccionariocamba.room.dao.AppDatabase
+import com.locototeam.core.dao.AppDatabase
 import com.locototeam.core.model.Dictionary
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
