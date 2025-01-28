@@ -7,27 +7,27 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.locotoDevTeam.diccionariocamba.view.mainFragment.MainFragment"
+        android:name="com.locototeam.diccionariocamba.view.mainFragment.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" />
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.locotoDevTeam.diccionariocamba.view.about.AboutFragment"
+        android:name="com.locototeam.diccionariocamba.view.about.AboutFragment"
         android:label="fragment_about"
         tools:layout="@layout/fragment_about" />
     <fragment
         android:id="@+id/slideFragment"
-        android:name="com.locotoDevTeam.diccionariocamba.view.slide.SlideFragment"
+        android:name="com.locototeam.diccionariocamba.view.slide.SlideFragment"
         android:label="fragment_slide"
         tools:layout="@layout/fragment_slide" />
     <fragment
         android:id="@+id/favoritesFragment"
-        android:name="com.locotoDevTeam.diccionariocamba.view.favorites.FavoritesFragment"
+        android:name="com.locototeam.diccionariocamba.view.favorites.FavoritesFragment"
         android:label="fragment_favorites"
         tools:layout="@layout/fragment_favorites" />
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.locotoDevTeam.diccionariocamba.view.detail.DetailFragment"
+        android:name="com.locototeam.diccionariocamba.view.detail.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" />
 </navigation>
