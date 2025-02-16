@@ -14,8 +14,8 @@ android {
         applicationId "com.locototeam.diccionariocamba"
         minSdk 23
         targetSdk 35
-        versionCode 11
-        versionName "1.5.2"
+        versionCode 1
+        versionName "2025.0216"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
